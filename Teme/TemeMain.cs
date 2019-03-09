@@ -23,8 +23,9 @@ namespace Teme
 
             Console.WriteLine(num + "...");
             CountDown(num - 1);
+
             Factorial factorial = new Factorial();
-            
+            Console.WriteLine(factorial.Factorial1(3));
                 
 
         }
