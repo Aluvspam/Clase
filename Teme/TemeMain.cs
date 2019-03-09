@@ -22,6 +22,10 @@ namespace Teme
 
             Console.WriteLine(num + "...");
             CountDown(num - 1);
+            Factorial factorial = new Factorial();
+            
+                
+
         }
 
         static int Cmmdc(int a, int b)
