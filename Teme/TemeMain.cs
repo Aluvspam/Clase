@@ -23,5 +23,20 @@ namespace Teme
             Console.WriteLine(num + "...");
             CountDown(num - 1);
         }
+
+        static int Cmmdc (int a, int b) {
+           return 1;
+        }
+
+        static int euclid(int a, int b)
+        {
+            int c;
+            while (b) {
+                c = a % b;
+                a = b;
+                b = c;
+            }
+            return a;
+        }
     }
 }
