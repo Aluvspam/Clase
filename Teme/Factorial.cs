@@ -8,7 +8,7 @@ namespace Teme
 {
    public class Factorial
     {
-        double Factorial1(int n)
+       public double Factorial1(int n)
         {
             if (n == 0)
                 return 1;
