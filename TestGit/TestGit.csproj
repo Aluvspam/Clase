@@ -50,6 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="txts\Andrei.txt" />
     <Content Include="txts\Diana.txt" />
     <Content Include="txts\General.txt" />
     <Content Include="txts\liviutxt.txt" />
