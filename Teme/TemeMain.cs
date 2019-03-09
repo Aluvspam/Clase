@@ -11,5 +11,9 @@ namespace Teme
         static void Main(string[] args)
         {
         }
+         static int Cmmmdc (int a, int b)
+        {
+            return 1;
+        }
     }
 }
