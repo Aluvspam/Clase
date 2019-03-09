@@ -12,6 +12,7 @@ namespace Teme
         static void Main(string[] args)
         {
             CountDown(20);
+            Cmmdc(20, 15);
             Console.Read();
         }
 
@@ -23,5 +24,15 @@ namespace Teme
             Console.WriteLine(num + "...");
             CountDown(num - 1);
         }
+        static int Cmmdc(int a, int b)
+        {
+             
+            if (a==b)
+            {
+                return a;
+            }
+            return 1;
+        }
+        
     }
 }
