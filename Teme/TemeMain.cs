@@ -28,5 +28,19 @@ namespace Teme
                 
 
         }
+
+        static int Cmmdc(int a, int b)
+        {
+            if (a > b)
+            {
+                return Cmmdc(b,a-b);
+            }
+
+
+            else
+            {
+                return Cmmdc(a, b - a);
+            }
+        }
     }
 }
