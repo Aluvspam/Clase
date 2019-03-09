@@ -10,6 +10,10 @@ namespace Teme
     {
         static void Main(string[] args)
         {
+            Factorial factorial = new Factorial();
+            
+                
+
         }
     }
 }
