@@ -14,6 +14,8 @@ namespace Teme
             //CountDown(20);
             
             Console.WriteLine(Euclid(30, 20));
+        
+            Cmmdc(20, 15);
             Console.Read();
         }
 
@@ -30,9 +32,12 @@ namespace Teme
                 
 
         }
-
         static int Cmmdc(int a, int b)
         {
+            if (a == b)
+            {
+                return a;
+            }
             if (a > b)
             {
                 return Cmmdc(b,a-b);
