@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="George.cs" />
     <Compile Include="Factorial.cs" />
     <Compile Include="TemeMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
