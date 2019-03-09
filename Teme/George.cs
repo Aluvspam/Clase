@@ -8,5 +8,10 @@ namespace Teme
 {
     class George
     {
+        //update from GBranch
+        private int x = 0;
+
+        //new change
+        private int y = 1;
     }
 }
