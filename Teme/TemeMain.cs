@@ -12,6 +12,7 @@ namespace Teme
         static void Main(string[] args)
         {
             CountDown(20);
+            Cmmdc(20, 15);
             Console.Read();
         }
 
@@ -22,6 +23,28 @@ namespace Teme
 
             Console.WriteLine(num + "...");
             CountDown(num - 1);
+
+            Factorial factorial = new Factorial();
+            Console.WriteLine(factorial.Factorial1(3));
+                
+
+        }
+        static int Cmmdc(int a, int b)
+        {
+            if (a == b)
+            {
+                return a;
+            }
+            if (a > b)
+            {
+                return Cmmdc(b,a-b);
+            }
+
+
+            else
+            {
+                return Cmmdc(a, b - a);
+            }
         }
          static int Cmmmdc (int a, int b)
         {
