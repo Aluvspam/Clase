@@ -11,7 +11,9 @@ namespace Teme
     {
         static void Main(string[] args)
         {
-            CountDown(20);
+            //CountDown(20);
+            
+            Console.WriteLine(Euclid(30, 20));
             Console.Read();
         }
 
@@ -43,14 +45,13 @@ namespace Teme
             }
         }
 
-        static int Cmmdc (int a, int b) {
-           return 1;
-        }
+      
 
-        static int euclid(int a, int b)
+        static int Euclid(int a, int b)
         {
             int c;
-            while (b) {
+           
+            while (b != 0) {
                 c = a % b;
                 a = b;
                 b = c;
