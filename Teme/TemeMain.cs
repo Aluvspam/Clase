@@ -26,8 +26,6 @@ namespace Teme
 
             Factorial factorial = new Factorial();
             Console.WriteLine(factorial.Factorial1(3));
-                
-
         }
         static int Cmmdc(int a, int b)
         {
@@ -39,16 +37,10 @@ namespace Teme
             {
                 return Cmmdc(b,a-b);
             }
-
-
             else
             {
                 return Cmmdc(a, b - a);
             }
-        }
-         static int Cmmmdc (int a, int b)
-        {
-            return 1;
         }
     }
 }
