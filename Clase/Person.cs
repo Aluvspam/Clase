@@ -8,6 +8,9 @@ namespace Clase
 {
     public class Person
     {
+        //TO DO: Teo add a field to tell us how many eggs a person has
+        //and create a method to buy eggs from another Person
+        //and add a field wallet to count the money a person has
         public Gender Gender { get; set; }
         public string Name { get; set; }
         public Address Address;

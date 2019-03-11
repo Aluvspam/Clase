@@ -8,6 +8,8 @@ namespace Clase
 {
     public abstract class Animal
     {
+        //TO DO: Gaby add a field to tell us the weight of an animal
+        //and add a field to tell us the owner of the Animal. if null the Animal is wild
         static int count;
         public int Id
         {

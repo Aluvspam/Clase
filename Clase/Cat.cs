@@ -9,6 +9,8 @@ namespace Clase
     public class Cat : Animal
     {
         //TO DO: Teo to add code here (fields, variables, methods constructor(s)
+        //add a method to eat other animals of the master if they are small enough
+        //Add a constant to tell us the max weight of a prey
         public Colour Colour;
 
         public override void Feed()

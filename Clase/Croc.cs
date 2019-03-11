@@ -8,7 +8,8 @@ namespace Clase
 {
     class Croc : Animal
     {
-
+        //TO DO: Andrei Manu - Add a constant to tell us the max weight of a prey
+        //add a method to eat other animals of the master if they are small enough
         public override void Feed()
         {
 
