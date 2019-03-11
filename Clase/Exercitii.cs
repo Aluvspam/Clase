@@ -50,12 +50,12 @@ namespace Clase
             crockyCroco.ShowStatus();
             Console.WriteLine("Croky status after crockyCroco swimmed");
             Croky.ShowStatus();
-            var Acroc = new Croc();
+            var Bismarck = new Croc();
             Console.WriteLine("Acroc status");
-            Acroc.ShowStatus();
-            Acroc.Swim();
+            Bismarck.ShowStatus();
+            Bismarck.Swim();
             Console.WriteLine("Acroc status after swimming");
-            Acroc.ShowStatus();
+            Bismarck.ShowStatus();
             Console.WriteLine("Croky status after Acroc swimmed");
             Croky.ShowStatus();
             //var cutuCroco = (Croc)zooKeeper.Pets[1];
