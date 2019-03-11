@@ -35,6 +35,7 @@ namespace Clase
         public void AdoptPet(Animal newPet)
         {
             Pets.Add(newPet);
+            newPet.owner = this;
         }
     }
 }
