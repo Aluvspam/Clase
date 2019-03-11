@@ -9,6 +9,8 @@ namespace Clase
     public class Chicken : Animal
     {
         //TO DO: Liviu to add code here (fields, variables, methods constructor(s)
+        // add a field/property to tell egg laying capacity of a chicken (eggs / week) you can use health and age to calculate this
+        //add a method that lays eggs
         public override void Feed()
         {
             string name = "Chicky";

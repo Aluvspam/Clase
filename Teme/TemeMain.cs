@@ -12,9 +12,9 @@ namespace Teme
         static void Main(string[] args)
         {
             //CountDown(20);
-            
+
             Console.WriteLine(Euclid(30, 20));
-        
+
             Cmmdc(20, 15);
             Console.Read();
         }
@@ -38,7 +38,7 @@ namespace Teme
             }
             if (a > b)
             {
-                return Cmmdc(b,a-b);
+                return Cmmdc(b, a - b);
             }
             else
             {
@@ -46,13 +46,29 @@ namespace Teme
             }
         }
 
-      
+        static int Cmmdc(int[] arr)
+        {
+            //conditia de terminare / stop
+            if (arr.Length <= 2)
+            {
+                //TO DO: write code for cases when arr has no elements
+                return Cmmdc(arr[0], arr[arr.Length - 1]);
+            }
+            int[] numere = new int[arr.Length - 1];
+            for (int i = 0; i < arr.Length - 2; i++)
+            {
+                numere[i] = arr[i];
+            }
+            numere[arr.Length - 2] = Cmmdc(arr[arr.Length - 2], arr[arr.Length - 1]);
+            return Cmmdc(numere);
+        }
 
         static int Euclid(int a, int b)
         {
             int c;
-           
-            while (b != 0) {
+
+            while (b != 0)
+            {
                 c = a % b;
                 a = b;
                 b = c;
