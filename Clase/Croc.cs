@@ -72,7 +72,7 @@ namespace Clase
             {
                 if (pet.weight <= MaxWeight)
                 {
-                    Console.WriteLine("Mananca" + pet.Name);
+                    Console.WriteLine("Mananca " + pet.Name);
                 }
             }
            
