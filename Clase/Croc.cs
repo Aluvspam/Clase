@@ -12,7 +12,7 @@ namespace Clase
         //TO DO: Andrei Manu - Add a constant to tell us the max weight of a prey
         //add a method to eat other animals of the master if they are small enough.
     
-        const int MaxWeight = 200 ;
+        const float MaxWeight = 500 ;
         
         public override void Feed()
         { 
@@ -64,7 +64,11 @@ namespace Clase
             Console.WriteLine("health = " + health + ", energy = " + energy);
         }
          
-        
+        public void EatAnimal()
+        {
+
+            
+        }
 
     }
 }
