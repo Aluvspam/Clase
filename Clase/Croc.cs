@@ -8,10 +8,14 @@ namespace Clase
 {
     class Croc : Animal
     {
+
         //TO DO: Andrei Manu - Add a constant to tell us the max weight of a prey
-        //add a method to eat other animals of the master if they are small enough
+        //add a method to eat other animals of the master if they are small enough.
+    
+        const float MaxWeight = 500 ;
+        
         public override void Feed()
-        {
+        { 
 
             Console.WriteLine($"My pet name si {name} and he feeds whit humans");
 
@@ -59,5 +63,22 @@ namespace Clase
         {
             Console.WriteLine("health = " + health + ", energy = " + energy);
         }
+         
+        public void EatAnimal()
+        {
+            var pets = this.owner.Pets;
+
+            foreach (var pet in pets)
+            {
+                if (pet.weight <= MaxWeight)
+                {
+                    Console.WriteLine("Mananca " + pet.Name);
+                }
+            }
+           
+
+            
+        }
+
     }
 }
