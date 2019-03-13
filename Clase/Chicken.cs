@@ -40,5 +40,26 @@ namespace Clase
         {
             return;
         }
+
+        public int Eggs()
+        {
+            
+            int day = 1;
+            int week = day * 7;
+            int layeggs = 1;
+            int egg = 2;
+            int eggs = layeggs * day;
+            int eggs2 = egg * eggs;
+            
+            if (health >= 0 && age <= 8)
+            {
+                if (health >= 50)
+                    return eggs * 2;
+                return eggs;
+            }
+            else
+                return 0;          
+                
+        }
     }
 }
