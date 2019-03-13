@@ -10,6 +10,8 @@ namespace Clase
     //Add a constant to tell us the max weight of a prey
     public class Dog : Animal
     {
+        private const int maxWeight = 15;
+        
         public int Age
         {
             get
@@ -45,6 +47,23 @@ namespace Clase
         public override void Talk()
         {
             Console.WriteLine("ham ham");
+        }
+
+        public void EatEggs(int eggs)
+        {
+            if(eggs > 0)
+            {
+                Console.WriteLine($"Eaten eggs: {eggs}");
+            }
+            else
+            {
+                Console.WriteLine("Master has no eggs");
+            }
+        }
+
+        public void GetPreyMaxWeight()
+        {
+            Console.WriteLine(maxWeight);
         }
     }
 }
