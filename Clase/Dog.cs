@@ -61,7 +61,7 @@ namespace Clase
             }
         }
 
-        public void GetPreyMaxWeight()
+        public void PrintPreyMaxWeight()
         {
             Console.WriteLine(maxWeight);
         }
