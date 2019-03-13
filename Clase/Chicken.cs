@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-    public class Chicken : Animal
+    public class Chicken : HunterAnimal
     {
         //TO DO: Liviu to add code here (fields, variables, methods constructor(s)
         // add a field/property to tell egg laying capacity of a chicken (eggs / week) you can use health and age to calculate this
