@@ -11,6 +11,9 @@ namespace Clase
         //TO DO: Teo to add code here (fields, variables, methods constructor(s)
         //add a method to eat other animals of the master if they are small enough
         //Add a constant to tell us the max weight of a prey
+
+        private const float MAX_Weight_Prey = 5;
+
         public Colour Colour;
 
         public override void Feed()
@@ -31,6 +34,23 @@ namespace Clase
         public override void Talk()
         {
             Console.WriteLine("Talk");
+        }
+        
+        public void EatAnimal()
+        {
+            if (this.owner != null)
+            {
+                var pets = this.owner.Pets;
+
+                foreach (var pet in pets)
+                {
+                    if (pet.weight <= MAX_Weight_Prey)
+                    {
+                        Console.WriteLine("Eat " + pet.Name);
+                        pets.Remove(pet);
+                    }
+                }
+            }
         }
 
         public Cat() : base()

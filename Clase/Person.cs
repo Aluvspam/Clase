@@ -11,6 +11,10 @@ namespace Clase
         //TO DO: Teo add a field to tell us how many eggs a person has
         //and create a method to buy eggs from another Person
         //and add a field wallet to count the money a person has
+        public int eggs;
+        public long wallet;
+        private const long PRICE = 5;
+
         public Gender Gender { get; set; }
         public string Name { get; set; }
         public Address Address;
@@ -31,6 +35,15 @@ namespace Clase
             this.Pets = animals;
             this.smokes = smokes;
         }
+
+        public void BuyEggs(Person person, int eggs)
+        {
+            this.eggs = this.eggs + eggs;
+            person.eggs = person.eggs - eggs;
+            wallet = wallet - eggs * PRICE;
+            person.wallet = person.wallet + eggs * PRICE;
+        }
+
 
         public void AdoptPet(Animal newPet)
         {
