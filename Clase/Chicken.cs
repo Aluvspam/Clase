@@ -56,8 +56,8 @@ namespace Clase
                 return eggs + incomeforeggs;
             }
             else
-                return 0;          
-                
+                return 0;
+
         }
     }
 }
