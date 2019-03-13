@@ -40,17 +40,17 @@ namespace Clase
         {
             return;
         }
-
+        //TO DO: Add comment to explain what this method does
         public int Eggs()
         {
-            
+            //TO DO: add comments to explain the variables used below
             int day = 1;
             int week = day * 7;
             int layeggs = 1;
             int egg = 2;
             int eggs = layeggs * day;
             int eggs2 = egg * eggs;
-            
+
             if (health >= 0 && age <= 8)
             {
                 if (health >= 50)
@@ -58,8 +58,8 @@ namespace Clase
                 return eggs;
             }
             else
-                return 0;          
-                
+                return 0;
+
         }
     }
 }
