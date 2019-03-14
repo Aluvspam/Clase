@@ -60,6 +60,7 @@
     <Compile Include="Gender.cs" />
     <Compile Include="Exercitii.cs" />
     <Compile Include="Girl.cs" />
+    <Compile Include="HunterAnimal.cs" />
     <Compile Include="Lion.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
