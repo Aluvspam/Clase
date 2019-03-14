@@ -40,5 +40,24 @@ namespace Clase
         {
             return;
         }
+
+        public int LayingEggsCapacity()
+        {            
+            int day = 1;
+            int layeggs = 1;
+            int eggprice = 2;
+            int eggs = layeggs * day;
+            int incomeforeggs = eggprice * eggs;
+            
+            if (health >= 0 && age <= 8)
+            {
+                if (health >= 50)
+                    return eggs * 2;
+                return eggs + incomeforeggs;
+            }
+            else
+                return 0;
+
+        }
     }
 }

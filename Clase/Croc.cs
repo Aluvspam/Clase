@@ -17,7 +17,7 @@ namespace Clase
         public override void Feed()
         { 
 
-            Console.WriteLine($"My pet name si {name} and he feeds whit humans");
+            Console.WriteLine($"My pet name si {name} and he feeds with humans");
 
         }
         public override void GrowOlder()
