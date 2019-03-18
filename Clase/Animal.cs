@@ -11,7 +11,7 @@ namespace Clase
         //TO DO: Gaby add a field to tell us the weight of an animal
         //and add a field to tell us the owner of the Animal. if null the Animal is wild
         //modificare nevoita
-        public float weight;
+        public double weight;
         internal Person owner;
         static int count;
         public int Id

@@ -11,18 +11,35 @@ namespace Clase
 
         //TO DO: Andrei Manu - Add a constant to tell us the max weight of a prey
         //add a method to eat other animals of the master if they are small enough.
-    
-        const float MaxWeight = 500 ;
-        
+
+        const float MaxWeight = 500;
+
         public override void Feed()
-        { 
+        {
 
             Console.WriteLine($"My pet name si {name} and he feeds with humans");
 
         }
         public override void GrowOlder()
         {
-            Console.WriteLine("He never get's old ");
+            Console.WriteLine("Croc is getting older when Andrei skips classes");
+            age++;
+            weight *= .99;
+            if (energy > 11)
+            {
+                energy -= 10;
+            }
+            else
+            {
+                energy = 1;
+                health -= 10 - (energy - 1);
+            }
+            if (health < 1)
+            {
+                health = 0;
+                energy = 0;
+                owner.Pets.Remove(this);
+            }
         }
 
         public override void Move()
@@ -63,7 +80,7 @@ namespace Clase
         {
             Console.WriteLine("health = " + health + ", energy = " + energy);
         }
-         
+
         public override void EatAnimal()
         {
             var pets = this.owner.Pets;
@@ -81,7 +98,7 @@ namespace Clase
             if (petsEat == 0)
             {
                 Console.WriteLine("Croc eat owner");
-            }            
+            }
         }
 
     }
