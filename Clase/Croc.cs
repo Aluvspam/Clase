@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-    class Croc : HunterAnimal
+    public class Croc : HunterAnimal
     {
 
         //TO DO: Andrei Manu - Add a constant to tell us the max weight of a prey
         //add a method to eat other animals of the master if they are small enough.
 
         const float MaxWeight = 500;
+        private static int crocCount;
 
         public override void Feed()
         {
@@ -52,11 +53,14 @@ namespace Clase
             Console.WriteLine("He speaks English");
         }
 
-        public Croc()
+        public Croc(string name) : base()
         {
-            this.name = "Croky";
-            this.age = 0;
-            this.health = 400;
+            this.name = name;
+            age = 0;
+            health = 100;
+            weight = 608;
+            crocCount++;
+            energy = 100;
         }
 
         public override string ToString()

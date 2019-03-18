@@ -47,7 +47,7 @@ namespace Clase
         public override string ToString()
         {
             var tip = GetType().ToString().Substring(6);
-            return String.Format($"my name is {Name} and I am a {tip} and I am {age} years old. I have {health} health and {energy} energy");
+            return String.Format($"my name is {Name} and I am a {tip} and I am {age} years old. My weight is {weight}, I have {health} health and {energy} energy");
         }
     }
 }

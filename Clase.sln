@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase", "Clase\Clase.csproj", "{C3611717-B013-41ED-8C69-17419B1FEEA8}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teme", "Teme\Teme.csproj", "{75DE4FDA-FBBF-4132-963C-D1C231EF7E11}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmmdc2nr", "cmmdc2nr\cmmdc2nr.csproj", "{CC678643-BEFE-40B6-A37C-5A1B626C8CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseTests", "ClaseTests\ClaseTests.csproj", "{EC31A7CC-082B-4453-9063-AC0AEFEFF58D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CC678643-BEFE-40B6-A37C-5A1B626C8CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC678643-BEFE-40B6-A37C-5A1B626C8CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC678643-BEFE-40B6-A37C-5A1B626C8CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC31A7CC-082B-4453-9063-AC0AEFEFF58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC31A7CC-082B-4453-9063-AC0AEFEFF58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC31A7CC-082B-4453-9063-AC0AEFEFF58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC31A7CC-082B-4453-9063-AC0AEFEFF58D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
