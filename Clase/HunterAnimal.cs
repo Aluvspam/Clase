@@ -6,26 +6,13 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-    public class HunterAnimal : Animal
+    public abstract class HunterAnimal : Animal
     {
-        public override void Feed()
-        {
-            
-        }
+        public int PreyMaxWeight { get; set; }
 
-        public override void GrowOlder()
+        public virtual void EatAnimal()
         {
-            
-        }
 
-        public override void Move()
-        {
-            
-        }
-
-        public override void Talk()
-        {
-            
         }
     }
 }
