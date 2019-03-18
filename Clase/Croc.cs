@@ -64,7 +64,7 @@ namespace Clase
             Console.WriteLine("health = " + health + ", energy = " + energy);
         }
          
-        public void EatAnimal()
+        public override void EatAnimal()
         {
             var pets = this.owner.Pets;
             var petsEat = 0;
