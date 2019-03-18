@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-    class Swan : Animal
+    class Swan : HunterAnimal
     {
         public string colour;
         public int Food;

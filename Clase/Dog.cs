@@ -8,7 +8,7 @@ namespace Clase
 {
     //TO DO: Diana create a method to eat eggs if master has eggs
     //Add a constant to tell us the max weight of a prey
-    public class Dog : Animal
+    public class Dog : HunterAnimal
     {
         private const int maxWeight = 15;
         

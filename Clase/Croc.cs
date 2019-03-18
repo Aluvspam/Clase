@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-    class Croc : Animal
+    class Croc : HunterAnimal
     {
 
         //TO DO: Andrei Manu - Add a constant to tell us the max weight of a prey

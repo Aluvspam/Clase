@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-    public class Cioara : Animal
+    public class Cioara : HunterAnimal
     {
         public Cioara(string name, int health, int energy, int age) : base()
         {
