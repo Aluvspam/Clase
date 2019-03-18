@@ -31,7 +31,26 @@ namespace Clase
         public override void Feed()
         {
             this.energy += 25;
-            // throw new NotImplementedException();
+            if(this.owner.eggs > 0)
+            {
+                Console.WriteLine("Eaten eggs");
+                this.owner.eggs = 0;
+            }
+            else
+            {
+                var pets = this.owner.Pets;
+
+                foreach (var pet in pets)
+                {
+                    if (pet.weight <= maxWeight)
+                    {
+                        Console.WriteLine("Eat " + pet.Name);
+                        pets.Remove(pet);
+                    }
+                }
+            } 
+
+
         }
 
         public override void GrowOlder()

@@ -36,12 +36,12 @@ namespace Clase
             this.smokes = smokes;
         }
 
-        public void BuyEggs(Person person, int eggs)
+        public void BuyEggs(Person seller, int eggs)
         {
             this.eggs = this.eggs + eggs;
-            person.eggs = person.eggs - eggs;
+            seller.eggs = seller.eggs - eggs;
             wallet = wallet - eggs * PRICE;
-            person.wallet = person.wallet + eggs * PRICE;
+            seller.wallet = seller.wallet + eggs * PRICE;
         }
 
 

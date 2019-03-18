@@ -67,17 +67,21 @@ namespace Clase
         public void EatAnimal()
         {
             var pets = this.owner.Pets;
+            var petsEat = 0;
 
             foreach (var pet in pets)
             {
                 if (pet.weight <= MaxWeight)
                 {
                     Console.WriteLine("Mananca " + pet.Name);
+                    petsEat += 1;
                 }
             }
-           
 
-            
+            if (petsEat == 0)
+            {
+                Console.WriteLine("Croc eat owner");
+            }            
         }
 
     }
