@@ -22,6 +22,7 @@ namespace Clase
             }
         }
         int id;
+        public bool ItsAlive { get { return health > 0; } }
         protected int health;
         protected int age;
         protected int energy;

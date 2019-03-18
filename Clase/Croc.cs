@@ -39,7 +39,10 @@ namespace Clase
             {
                 health = 0;
                 energy = 0;
-                owner.Pets.Remove(this);
+                if (owner != null)
+                {
+                    owner.Pets.Remove(this);
+                }
             }
         }
 
