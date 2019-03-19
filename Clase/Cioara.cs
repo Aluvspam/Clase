@@ -17,6 +17,30 @@ namespace Clase
 
         }
 
+        public int Age
+        {
+            get
+            {
+                return age;
+            }
+        }
+
+        public int Health
+        {
+            get
+            {
+                return health;
+            }
+        }
+
+        public int Energy
+        {
+            get
+            {
+                return energy;
+            }
+        }
+
         public override void Feed()
         {
             this.energy += 44;
@@ -36,6 +60,11 @@ namespace Clase
         public override void Talk()
         {
             Console.WriteLine("haur,fer");
+        }
+        public override void EatAnimal()
+        {
+            this.energy += 1;
+            this.health += 1;
         }
     }
 }
