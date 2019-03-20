@@ -14,5 +14,9 @@ namespace Clase
         {
 
         }
+        public HunterAnimal() : base()
+        {
+            
+        }
     }
 }
