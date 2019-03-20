@@ -10,6 +10,7 @@ namespace Clase
     {
         public static void Main(string[] args)
         {
+            /*
             new Exercitii().GradinaZoologica();
             var fierari = new Car("", "", null, 0);
             AfisareMasini(new Car[] { fierari });
@@ -90,6 +91,10 @@ namespace Clase
             Croky.GrowOlder();
             Croky.Move();
             Croky.Talk();
+            */
+            Cat pisicuta = new Cat();
+            pisicuta.EatAnimal();
+
             Console.ReadKey();
         }
         static void AfisareMasini(Car[] masini)

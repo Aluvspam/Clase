@@ -15,7 +15,7 @@ namespace Clase
             zooKeeper.AdoptPet(dog);
             Dog dog2 = new Dog("Patrocle2", 50, 55, 6);
             zooKeeper.AdoptPet(dog2);
-            Croc Croky = new Croc();
+            Croc Croky = new Croc("Croky");
             Console.WriteLine("Croky status");
             Croky.ShowStatus();
             Croky.Swim();
@@ -50,7 +50,7 @@ namespace Clase
             crockyCroco.ShowStatus();
             Console.WriteLine("Croky status after crockyCroco swimmed");
             Croky.ShowStatus();
-            var Bismarck = new Croc();
+            var Bismarck = new Croc("Bismarck");
             Console.WriteLine("Acroc status");
             Bismarck.ShowStatus();
             Bismarck.Swim();

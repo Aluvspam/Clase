@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-    public class Lion : Animal
+    public class Lion : HunterAnimal
     {
 
         public override void Feed()

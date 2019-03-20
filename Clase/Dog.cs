@@ -6,17 +6,44 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
+    // Dog dog = new Dog("abcd", 70, 25, 20);
+    // dog.Feed();
     //TO DO: Diana create a method to eat eggs if master has eggs
     //Add a constant to tell us the max weight of a prey
-    public class Dog : Animal
+    public class Dog : HunterAnimal
     {
         private const int maxWeight = 15;
-        
+
         public int Age
         {
             get
             {
                 return age;
+            }
+        }
+
+        public int Energy
+        {
+            get
+            {
+                return energy;
+            }
+            set
+            {
+                energy = value;
+            }
+
+        }
+
+        public int Health
+        {
+            get
+            {
+                return health;
+            }
+            set
+            {
+                health = value;
             }
         }
 
@@ -31,7 +58,26 @@ namespace Clase
         public override void Feed()
         {
             this.energy += 25;
-            // throw new NotImplementedException();
+            //if (this.owner.eggs > 0)
+            //{
+            //    Console.WriteLine("Eaten eggs");
+            //    this.owner.eggs = 0;
+            //}
+            //else
+            //{
+            //    var pets = this.owner.Pets;
+
+            //    foreach (var pet in pets)
+            //    {
+            //        if (pet.weight <= maxWeight)
+            //        {
+            //            Console.WriteLine("Eat " + pet.Name);
+            //            pets.Remove(pet);
+            //        }
+            //    }
+            //}
+
+
         }
 
         public override void GrowOlder()
@@ -51,7 +97,7 @@ namespace Clase
 
         public void EatEggs(int eggs)
         {
-            if(eggs > 0)
+            if (eggs > 0)
             {
                 Console.WriteLine($"Eaten eggs: {eggs}");
             }
@@ -64,6 +110,11 @@ namespace Clase
         public void PrintPreyMaxWeight()
         {
             Console.WriteLine(maxWeight);
+        }
+        public override void EatAnimal()
+        {
+            this.energy += 1;
+            this.health += 1;
         }
     }
 }
