@@ -57,25 +57,34 @@ namespace Clase
 
         public override void Feed()
         {
-            this.energy += 25;
-            //if (this.owner.eggs > 0)
-            //{
-            //    Console.WriteLine("Eaten eggs");
-            //    this.owner.eggs = 0;
-            //}
-            //else
-            //{
-            //    var pets = this.owner.Pets;
+            
+            if (this.owner != null)
+            {
+                this.energy += 25;
+                if (this.owner.eggs > 0)
+                {
+                    Console.WriteLine("Eaten eggs");
+                    this.owner.eggs = 0;
+                }
+                else
+                {
+                    var pets = this.owner.Pets;
 
-            //    foreach (var pet in pets)
-            //    {
-            //        if (pet.weight <= maxWeight)
-            //        {
-            //            Console.WriteLine("Eat " + pet.Name);
-            //            pets.Remove(pet);
-            //        }
-            //    }
-            //}
+                    foreach (var pet in pets)
+                    {
+                        if (pet.weight <= maxWeight && this!= pet)
+                        {
+                            Console.WriteLine("Eat " + pet.Name);
+                            pets.Remove(pet);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                this.energy += 25;
+            }
+
 
         }
 

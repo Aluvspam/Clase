@@ -98,6 +98,7 @@ namespace Clase
                 if (pet.weight <= MaxWeight)
                 {
                     Console.WriteLine("Mananca " + pet.Name);
+                    pets.Remove(pet);
                     petsEat += 1;
                 }
             }
@@ -107,6 +108,6 @@ namespace Clase
                 Console.WriteLine("Croc eat owner");
             }
         }
-
+       
     }
 }

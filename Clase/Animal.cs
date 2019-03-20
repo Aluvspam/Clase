@@ -12,7 +12,7 @@ namespace Clase
         //and add a field to tell us the owner of the Animal. if null the Animal is wild
         //modificare nevoita
         public double weight;
-        internal Person owner;
+        public Person owner;
         static int count;
         public int Id
         {

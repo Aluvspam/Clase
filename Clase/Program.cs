@@ -10,7 +10,7 @@ namespace Clase
     {
         public static void Main(string[] args)
         {
-            /*
+            
             new Exercitii().GradinaZoologica();
             var fierari = new Car("", "", null, 0);
             AfisareMasini(new Car[] { fierari });
@@ -86,15 +86,15 @@ namespace Clase
             Andrei.Skil = "";
             Andrei.Name = "Andrei";
             Andrei.WriteEmployee();
-            Croc Croky = new Croc();
+            Croc Croky = new Croc("Croky");
             Croky.Feed();
             Croky.GrowOlder();
             Croky.Move();
             Croky.Talk();
-            */
+            /*
             Cat pisicuta = new Cat();
             pisicuta.EatAnimal();
-
+            */
             Console.ReadKey();
         }
         static void AfisareMasini(Car[] masini)
