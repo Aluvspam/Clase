@@ -23,6 +23,10 @@ namespace Clase
                         Console.WriteLine("Eat " + pet.Name);
                         pets.Remove(pet);
                     }
+                    else
+                    {
+                            
+                    }
                 }
             }
         }
