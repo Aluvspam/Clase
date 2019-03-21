@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="Animal.cs" />
+    <Compile Include="Bug.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Cat.cs" />
     <Compile Include="Chicken.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Class.cs" />
     <Compile Include="Colour.cs" />
     <Compile Include="CombustionType.cs" />
+    <Compile Include="Cow.cs" />
     <Compile Include="Croc.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Employee.cs" />
@@ -66,11 +68,14 @@
     <Compile Include="Gender.cs" />
     <Compile Include="Exercitii.cs" />
     <Compile Include="Girl.cs" />
+    <Compile Include="Herbivores.cs" />
     <Compile Include="HunterAnimal.cs" />
     <Compile Include="Lion.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rabbit.cs" />
+    <Compile Include="Sheep.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Swan.cs" />
     <Compile Include="Teacher.cs" />
