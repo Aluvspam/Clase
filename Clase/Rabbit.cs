@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-   abstract class Herbivores
+    class Rabbit: Herbivores
     {
     }
 }

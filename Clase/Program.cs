@@ -86,7 +86,7 @@ namespace Clase
             Andrei.Skil = "";
             Andrei.Name = "Andrei";
             Andrei.WriteEmployee();
-            Croc Croky = new Croc();
+            Croc Croky = new Croc("Croky");
             Croky.Feed();
             Croky.GrowOlder();
             Croky.Move();
