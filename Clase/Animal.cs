@@ -27,11 +27,29 @@ namespace Clase
         protected int age;
         protected int energy;
         protected string name;
+        protected double fat;
         public string Name
         {
             get
             {
                 return name;
+            }
+        }
+
+        protected int Energy
+        {
+            get
+            {
+                return this.energy;
+            }
+
+            private set
+            {
+                if(value > 100)
+                {
+                    this.energy = 100;
+                    this.fat = (value - 100);
+                }
             }
         }
 

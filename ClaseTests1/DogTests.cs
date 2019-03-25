@@ -14,7 +14,7 @@ namespace Clase.Tests
         [TestMethod()]
         public void EatAnimalTest()
         {
-            Dog dog = new Dog("Patrocle", 80, 85, 3);
+            Dog dog = new Dog("Patrocle", 80, 85, 3,50);
             dog.EatAnimal();
             Assert.AreEqual(dog.Health, 81);
             Assert.AreEqual(dog.Energy, 86);
@@ -23,7 +23,7 @@ namespace Clase.Tests
         [TestMethod()]
         public void GrowOlderTest()
         {
-            Dog dog = new Dog("Patrocle", 80, 85, 3);
+            Dog dog = new Dog("Patrocle", 80, 85, 3,50);
             dog.GrowOlder();
 
             Assert.AreEqual(dog.Age, 4);
@@ -32,7 +32,7 @@ namespace Clase.Tests
         [TestMethod()]
         public void FeedTest()
         {
-            Dog dog = new Dog("Patrocle", 80, 85, 3);
+            Dog dog = new Dog("Patrocle", 80, 85, 3,50);
             //var owner = new Person(Gender.male, "Andrei", null, "+40112", null, 34, new List<Animal>(), true);
             //owner.AdoptPet(dog);
 
@@ -47,7 +47,7 @@ namespace Clase.Tests
         [TestMethod()]
         public void FeedTestIf()
         {
-            Dog dog = new Dog("Patrocle", 80, 85, 3);
+            Dog dog = new Dog("Patrocle", 80, 85, 3,50);
             var owner = new Person(Gender.male, "Andrei", null, "+40112", null, 34, new List<Animal>(), true);
             owner.AdoptPet(dog);
             dog.weight = 5;

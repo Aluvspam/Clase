@@ -47,17 +47,18 @@ namespace Clase
             }
         }
 
-        public Dog(string name, int health, int energy, int age)
+        public Dog(string name, int health, int energy, int age, double fat)
         {
             this.name = name;
             this.health = health;
             this.energy = energy;
             this.age = age;
+            this.fat = fat;
         }
 
-        public override void Feed()
+        public override void Feed() 
         {
-            
+            this.fat += 10;
             if (this.owner != null)
             {
                 this.energy += 25;
@@ -74,8 +75,7 @@ namespace Clase
                     {
                         if (pet.weight <= PreyMaxWeight && this!= pet)
                         {
-                            Console.WriteLine("Eat " + pet.Name);
-                            pets.Remove(pet);
+                            Console.WriteLine("Eat " + pet.Name);   
                         }
                     }
                 }
@@ -112,6 +112,10 @@ namespace Clase
             else
             {
                 Console.WriteLine("Master has no eggs");
+            }
+            if (owner != null)
+            {
+                owner.Pets.Remove(this);
             }
         }
 

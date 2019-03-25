@@ -10,10 +10,10 @@ namespace Clase
     {
         public void GradinaZoologica()
         {
-            Dog dog = new Dog("Patrocle", 50, 55, 6);
+            Dog dog = new Dog("Patrocle", 50, 55, 6,50);
             Employee zooKeeper = new Employee(/*Gender.male, "Femele", null, "", null, 0, null, false*/);
             zooKeeper.AdoptPet(dog);
-            Dog dog2 = new Dog("Patrocle2", 50, 55, 6);
+            Dog dog2 = new Dog("Patrocle2", 50, 55, 6,50);
             zooKeeper.AdoptPet(dog2);
             Croc Croky = new Croc("Croky");
             Console.WriteLine("Croky status");

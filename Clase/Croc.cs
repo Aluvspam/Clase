@@ -108,6 +108,9 @@ namespace Clase
                 Console.WriteLine("Croc eat owner");
             }
         }
-       
+        public Croc()
+        {
+                
+        }
     }
 }
