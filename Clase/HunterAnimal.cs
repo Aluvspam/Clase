@@ -9,17 +9,17 @@ namespace Clase
     public abstract class HunterAnimal : Animal
     {
         protected float PreyMaxWeight { get; set; }
-        public int Energy
-        {
-            get
-            {
-                return energy;
-            }
-            protected set
-            {
-                energy = value;
-            }
-        }
+        //public int Energy
+        //{
+        //    get
+        //    {
+        //        return energy;
+        //    }
+        //    protected set
+        //    {
+        //        energy = value;
+        //    }
+        //}
         public bool Canibal;
 
         public virtual void EatAnimal()
