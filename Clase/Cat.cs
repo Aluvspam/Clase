@@ -57,23 +57,6 @@ namespace Clase
             Console.WriteLine("Talk");
         }
 
-        public override void EatAnimal()
-        {
-            if (this.owner != null)
-            {
-                var pets = this.owner.Pets;
-
-                foreach (var pet in pets)
-                {
-                    if (pet.weight <= MAX_Weight_Prey)
-                    {
-                        Console.WriteLine("Eat " + pet.Name);
-                        pets.Remove(pet);
-                    }
-                }
-            }
-        }
-
         public Cat() : base()
         {
             this.name = "";

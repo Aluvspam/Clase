@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-   abstract class Herbivores
-    { 
+   abstract class Herbivores:Animal
+    {
+        //public List<String> Ierbivoare = new List<string>() {"Vaca","Oaie","Capra", };
         
     }
 }
