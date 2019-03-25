@@ -72,7 +72,7 @@ namespace Clase
 
                     foreach (var pet in pets)
                     {
-                        if (pet.weight <= maxWeight && this!= pet)
+                        if (pet.weight <= PreyMaxWeight && this!= pet)
                         {
                             Console.WriteLine("Eat " + pet.Name);
                             pets.Remove(pet);
