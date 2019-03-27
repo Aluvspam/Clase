@@ -33,6 +33,7 @@ namespace TFT
         private Moves RandomMove()
         {
             return (rnd.Next(2) == 0) ? Moves.C : Moves.D;
+            int[,] matriceDubla = new int[,] { { 1, 5, 8 }, { 2, 4, 6 } };
         }
     }
 }

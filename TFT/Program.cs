@@ -33,15 +33,15 @@ namespace TFT
             //{
             //    excelAvailable = true;
             //}
-            IPlayer cristi = new CristiPlayer();
+            //IPlayer cristi = new CristiPlayer();
             IPlayer random = new RandomPlayer2();
-            IPlayer ovidiu = new ClassPlayerOvidiu();
+            //IPlayer ovidiu = new ClassPlayerOvidiu();
             //var game = new Game(cristi2, boss);
             //var var = boss.GetType().ToString();
             players = new List<IPlayer>();
-            players.Add(cristi);
+            //players.Add(cristi);
             players.Add(random);
-            players.Add(ovidiu);
+            //players.Add(ovidiu);
             if (excelAvailable)
             {
                 //_Workbook xlWorkBook = xlApp.Workbooks.Add();
