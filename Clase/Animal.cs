@@ -36,20 +36,21 @@ namespace Clase
             }
         }
 
-        protected int Energy
+        public int Energy
         {
             get
             {
                 return this.energy;
             }
 
-            private set
+            protected set
             {
-                if(value > 100)
+                if (value > 100)
                 {
                     this.energy = 100;
                     this.fat = (value - 100);
                 }
+                //TO DO: add else
             }
         }
 
