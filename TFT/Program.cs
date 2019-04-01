@@ -25,6 +25,7 @@ namespace TFT
         {
             RunTFT();
         }
+        
 
         private static void RunTFT()
         {
@@ -36,6 +37,7 @@ namespace TFT
             //IPlayer cristi = new CristiPlayer();
             IPlayer random = new RandomPlayer2();
             //IPlayer ovidiu = new ClassPlayerOvidiu();
+            IPlayer diana = new DianaPlayer();
             //var game = new Game(cristi2, boss);
             //var var = boss.GetType().ToString();
             players = new List<IPlayer>();
