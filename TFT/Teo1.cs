@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TFT
 {
-    class Teo : IPlayer, IScore
+    class Teo1 : IPlayer, IScore
     {
         public int Score
         {
