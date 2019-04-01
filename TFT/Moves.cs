@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestGit
+namespace TFT
 {
-    class MainClass
+    public enum Moves
     {
-        static void Main(string[] args)
-        {
-        }
-
+        B,
+        C,
+        D
     }
 }
-  

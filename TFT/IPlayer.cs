@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestGit
+namespace TFT
 {
-    class MainClass
+    interface IPlayer
     {
-        static void Main(string[] args)
-        {
-        }
-
+        Moves MyMove(Moves myLastMove, Moves othersLastMove);
+        Moves FirstMove();
     }
 }
-  

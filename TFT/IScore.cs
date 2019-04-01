@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestGit
+namespace TFT
 {
-    class MainClass
+    interface IScore
     {
-        static void Main(string[] args)
-        {
-        }
-
+        int Score { get;}
     }
 }
-  
