@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace Clase
 {
-    class Cow: Herbivores
+    class Cow : Herbivores
     {
+        public override void Feed()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void GrowOlder()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Move()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Talk()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
