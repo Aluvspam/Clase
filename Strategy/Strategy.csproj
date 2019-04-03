@@ -46,7 +46,7 @@
     <Compile Include="Dog.cs" />
     <Compile Include="Drone.cs" />
     <Compile Include="Flying.cs" />
-    <Compile Include="IMove.cs" />
+    <Compile Include="IMoveStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Running4Feet.cs" />
     <Compile Include="World.cs" />
