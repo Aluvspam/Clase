@@ -43,8 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractTopping.cs" />
     <Compile Include="George.cs" />
     <Compile Include="Factorial.cs" />
+    <Compile Include="IPizza.cs" />
+    <Compile Include="Mozzarella.cs" />
+    <Compile Include="Peperoni.cs" />
+    <Compile Include="RunExamples.cs" />
+    <Compile Include="Shrooms.cs" />
     <Compile Include="TemeMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

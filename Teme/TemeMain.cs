@@ -12,7 +12,7 @@ namespace Teme
         static void Main(string[] args)
         {
             //CountDown(20);
-
+            Curs15.Decorator.RunExamples.Run();
             Console.WriteLine(Euclid(30, 20));
 
             Cmmdc(20, 15);
