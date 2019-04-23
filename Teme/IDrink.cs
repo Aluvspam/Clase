@@ -23,13 +23,14 @@ namespace Curs15.Decorator.Tema
     }
     public interface ICocktail : IDrink, IJuice
     {
-        int TotalCost(int quantity, int cost);
+        int TotalCost(int quantity, int cost,string name);
     }
 
     public class Gin : IDrink
     {
         private int cost = 2;
         private int quantity = 25;
+        private string name = "Gin";
 
         public int GetCost()
         {
@@ -38,6 +39,10 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return quantity;
+        }
+        public string GetName()
+        {
+            return name;
         }
     }
 

@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoStrategy", "NoStrategy\No
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{2DD92581-2925-45AC-B0D5-FF4D5B36947C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patterns.csproj", "{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -215,6 +217,26 @@ Global
 		{2DD92581-2925-45AC-B0D5-FF4D5B36947C}.Release|x64.Build.0 = Release|Any CPU
 		{2DD92581-2925-45AC-B0D5-FF4D5B36947C}.Release|x86.ActiveCfg = Release|Any CPU
 		{2DD92581-2925-45AC-B0D5-FF4D5B36947C}.Release|x86.Build.0 = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|ARM.Build.0 = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|x64.Build.0 = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Debug|x86.Build.0 = Debug|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|ARM.Build.0 = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|ARM64.Build.0 = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|x64.ActiveCfg = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|x64.Build.0 = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|x86.ActiveCfg = Release|Any CPU
+		{DBDAE864-FE04-4E3A-9F11-A9B5ECCF71B5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
