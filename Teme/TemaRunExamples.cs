@@ -10,10 +10,9 @@ namespace Curs15.Decorator.Tema
     {
         public static void Run()
         {
-            IDrink drink = new Drink();
-
+            IDrink drink = new Gin();
             IJuice orange = new Orange();
-            orange.Component = gin;
+           // orange.Component = Gin;
             
         }
     }
