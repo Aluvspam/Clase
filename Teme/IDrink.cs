@@ -133,7 +133,7 @@ namespace Curs15.Decorator.Tema
         }
         public string GetName()
         {
-            return tonic;
+            return Component + tonic;
         }
     }
     public class Cola : IJuice
