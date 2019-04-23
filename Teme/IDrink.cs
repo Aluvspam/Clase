@@ -71,7 +71,7 @@ namespace Curs15.Decorator.Tema
     {
         private int cost = 2;
         private int quantity = 25;
-        public string jb = "Whiskey";
+        private string jb = "Whiskey";
 
 
         public int GetCost()
@@ -93,6 +93,7 @@ namespace Curs15.Decorator.Tema
         private int cost = 3;
         private int quantity = 25;
         private string name = "Rom";
+
         public int GetCost()
         {
             return cost;
@@ -111,7 +112,7 @@ namespace Curs15.Decorator.Tema
     {
         private int cost = 3;
         private int quantity = 25;
-        public string tonic = "Tonic";
+        private string tonic = "Tonic";
 
         public IDrink Component { get; set; }
 
@@ -139,7 +140,7 @@ namespace Curs15.Decorator.Tema
     {
         private int cost = 3;
         private int quantity = 25;
-        public string cola = "Cola";
+        private string cola = "Cola";
 
         public IDrink Component { get; set; }
 
@@ -169,6 +170,7 @@ namespace Curs15.Decorator.Tema
     {
         private int cost = 3;
         private int quantity = 25;
+        private string orange = "Orange";
 
         public IDrink Component { get; set; }
 
@@ -186,6 +188,10 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return quantity;
+        }
+        public string GetName()
+        {
+            return orange;
         }
     }
 
@@ -193,6 +199,7 @@ namespace Curs15.Decorator.Tema
     {
         private int cost = 3;
         private int quantity = 25;
+        private string cranberry = "Cranberry";
 
         public IDrink Component { get; set; }
 
@@ -210,6 +217,10 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return quantity;
+        }
+        public string GetName()
+        {
+            return cranberry;
         }
     }
 }
