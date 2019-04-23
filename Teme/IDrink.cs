@@ -92,7 +92,7 @@ namespace Curs15.Decorator.Tema
         private int cost = 3;
         private int quantity = 25;
 
-        public IJuice Component { get; set; }
+        public IDrink Component { get; set; }
 
         public int GetCost()
         {
@@ -115,7 +115,7 @@ namespace Curs15.Decorator.Tema
         private int cost = 3;
         private int quantity = 25;
 
-        public IJuice Component { get; set; }
+        public IDrink Component { get; set; }
 
         public int GetCost()
         {
@@ -139,7 +139,7 @@ namespace Curs15.Decorator.Tema
         private int cost = 3;
         private int quantity = 25;
 
-        public IJuice Component { get; set; }
+        public IDrink Component { get; set; }
 
         public int GetCost()
         {
@@ -163,7 +163,7 @@ namespace Curs15.Decorator.Tema
         private int cost = 3;
         private int quantity = 25;
 
-        public IJuice Component { get; set; }
+        public IDrink Component { get; set; }
 
         public int GetCost()
         {
