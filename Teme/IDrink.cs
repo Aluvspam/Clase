@@ -10,6 +10,7 @@ namespace Curs15.Decorator.Tema
     {
         int GetCost();
         int GetQuantity();
+        string GetName();
 
     }
     public interface IJuice : IDrink
