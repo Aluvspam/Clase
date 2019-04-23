@@ -12,7 +12,7 @@ namespace Curs15.Decorator.Tema
         {
             IDrink drink = new Drink();
 
-            Ijuice orange = new Orange();
+            IJuice orange = new Orange();
             orange.Component = gin;
             
         }

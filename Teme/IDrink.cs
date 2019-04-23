@@ -12,15 +12,15 @@ namespace Curs15.Decorator.Tema
         int GetQuantity();
 
     }
-    public interface Ijuice : IDrink
+    public interface IJuice : IDrink
     {
-        Ijuice Component
+        IDrink Component
         {
             get; set;
         }
 
     }
-    public interface ICocktail : IDrink, Ijuice
+    public interface ICocktail : IDrink, IJuice
     {
         int TotalCost(int quantity, int cost);
     }
@@ -87,12 +87,12 @@ namespace Curs15.Decorator.Tema
         }
     }
 
-    public class Tonic : Ijuice
+    public class Tonic : IJuice
     {
         private int cost = 3;
         private int quantity = 25;
 
-        public Ijuice Component { get; set; }
+        public IJuice Component { get; set; }
 
         public int GetCost()
         {
@@ -110,36 +110,12 @@ namespace Curs15.Decorator.Tema
             return quantity;
         }
     }
-    public class Cola : Ijuice
+    public class Cola : IJuice
     {
         private int cost = 3;
         private int quantity = 25;
 
-        public Ijuice Component { get; set; }
-
-        public int GetCost()
-        {
-            if (Component != null)
-            {
-                return cost + Component.GetCost();
-            }
-            else
-            {
-                return cost;
-            }
-        }
-        public int GetQuantity()
-        {
-            return quantity;
-        }
-    }
-
-    public class Orange : Ijuice
-    {
-        private int cost = 3;
-        private int quantity = 25;
-
-        public Ijuice Component { get; set; }
+        public IJuice Component { get; set; }
 
         public int GetCost()
         {
@@ -158,12 +134,36 @@ namespace Curs15.Decorator.Tema
         }
     }
 
-    public class Cranberry : Ijuice
+    public class Orange : IJuice
     {
         private int cost = 3;
         private int quantity = 25;
 
-        public Ijuice Component { get; set; }
+        public IJuice Component { get; set; }
+
+        public int GetCost()
+        {
+            if (Component != null)
+            {
+                return cost + Component.GetCost();
+            }
+            else
+            {
+                return cost;
+            }
+        }
+        public int GetQuantity()
+        {
+            return quantity;
+        }
+    }
+
+    public class Cranberry : IJuice
+    {
+        private int cost = 3;
+        private int quantity = 25;
+
+        public IJuice Component { get; set; }
 
         public int GetCost()
         {
