@@ -14,6 +14,7 @@ namespace Curs15.Decorator.Tema
             IJuice orange = new Orange { Component = gin };
             Console.WriteLine("ginOrange volume = " + orange.GetQuantity());
             Console.WriteLine("ginOrange price = " + orange.GetCost());
+            Console.ReadLine();
         }
     }
 }

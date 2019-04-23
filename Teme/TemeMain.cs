@@ -11,6 +11,7 @@ namespace Teme
     {
         static void Main(string[] args)
         {
+            Curs15.Decorator.Tema.TemaRunExamples.Run();
             int[] arr = new int[40];
             //CountDown(20);
             Curs15.Decorator.RunExamples.Run();
@@ -56,9 +57,10 @@ namespace Teme
                 if (arr.Length == 0)
                 {
                     return 0; //TO DO: write code for cases when arr has no elements// Done
-                } else
+                }
+                else
                 {
-                    
+
                     return Cmmdc(arr[0], arr[arr.Length - 1]);
                 }
             }
