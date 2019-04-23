@@ -115,6 +115,7 @@ namespace Curs15.Decorator.Tema
         private string tonic = "Tonic";
 
         public IDrink Component { get; set; }
+        public int ginTonic { get; internal set; }
 
         public int GetCost()
         {
