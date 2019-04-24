@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Curs15.Decorator.Tema
 {
     public interface IDrink
-    {    
+    {
         int GetCost();
         int GetQuantity();
         string GetName();
@@ -23,7 +23,9 @@ namespace Curs15.Decorator.Tema
     }
     public interface ICocktail : IDrink, IJuice
     {
-        int TotalCost(int quantity, int cost,string name);
+        int TotalCost(int quantity, int cost, string name);//dIANA  what does this do?
+        //TO DO: create some recipes example RumCola = CubaLibre ... create the drinks using the recipes 
+        IJuice CreateDrink(string name);
     }
 
     public class Gin : IDrink
@@ -64,7 +66,7 @@ namespace Curs15.Decorator.Tema
         {
             return vodka;
         }
-                
+
     }
 
     public class JB : IDrink
@@ -100,7 +102,7 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return this.quantity+quantity;
+            return this.quantity + quantity;
         }
         public string GetName()
         {

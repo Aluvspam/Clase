@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace StateProject
 {
-    class Client
+    public class Client
     {
+        public static void Run()
+        {
+            var context = new Context();
+            context.setState(new StateOne());
+            context.GoNext();
+        }
     }
 }

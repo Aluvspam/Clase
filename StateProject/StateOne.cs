@@ -8,11 +8,9 @@ namespace StateProject
 {
     class StateOne : State
     {
-        
-
         public override void goNext(Context inContext)
         {
-            inContext.setState(new StateOne());
+            inContext.setState(new StateTwo());
         }
     }
 }
