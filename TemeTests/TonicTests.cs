@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 namespace Curs15.Decorator.Tema.Tests
 {
     [TestClass()]
-    public class OrangeTests
+    public class TonicTests
     {
         [TestMethod()]
-        public void GetQuantityTest()
+        public void GetNameTest()
         {
             IDrink gin = new Gin();
-            IJuice orange = new Orange { Component = gin };
-            Assert.AreEqual(gin.GetQuantity() + new Orange().GetQuantity(), orange.GetQuantity());
+            IJuice tonic = new Tonic { Component = gin };
+            Assert.AreEqual(gin.GetName() + new Tonic().GetName(), tonic.GetName());
         }
     }
 }

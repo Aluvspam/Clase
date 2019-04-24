@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="OrangeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TonicTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Teme\Teme.csproj">
