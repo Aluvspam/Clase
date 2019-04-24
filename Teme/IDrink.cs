@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Curs15.Decorator.Tema
 {
     public interface IDrink
-    {
+    {    
         int GetCost();
         int GetQuantity();
 
@@ -36,7 +36,7 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return quantity;
+            return this.quantity + quantity;
         }
     }
 
@@ -52,7 +52,7 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return quantity;
+            return this.quantity + quantity;
         }
     }
 
@@ -68,7 +68,7 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return quantity;
+            return this.quantity + quantity;
         }
     }
 
@@ -83,7 +83,7 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return quantity;
+            return this.quantity+quantity;
         }
     }
 
