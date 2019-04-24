@@ -10,6 +10,7 @@ namespace Curs15.Decorator.Tema
     {    
         int GetCost();
         int GetQuantity();
+        string GetName();
 
     }
     public interface IJuice : IDrink
@@ -22,13 +23,14 @@ namespace Curs15.Decorator.Tema
     }
     public interface ICocktail : IDrink, IJuice
     {
-        int TotalCost(int quantity, int cost);
+        int TotalCost(int quantity, int cost,string name);
     }
 
     public class Gin : IDrink
     {
         private int cost = 2;
         private int quantity = 25;
+        private string name = "Gin";
 
         public int GetCost()
         {
@@ -37,6 +39,10 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return this.quantity + quantity;
+        }
+        public string GetName()
+        {
+            return name;
         }
     }
 
@@ -44,7 +50,7 @@ namespace Curs15.Decorator.Tema
     {
         private int cost = 3;
         private int quantity = 25;
-
+        private string vodka = "Vodka";
 
         public int GetCost()
         {
@@ -54,12 +60,18 @@ namespace Curs15.Decorator.Tema
         {
             return this.quantity + quantity;
         }
+        public string GetName()
+        {
+            return vodka;
+        }
+                
     }
 
     public class JB : IDrink
     {
         private int cost = 2;
         private int quantity = 25;
+        private string jb = "Whiskey";
 
 
         public int GetCost()
@@ -69,6 +81,10 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return this.quantity + quantity;
+        }
+        public string GetName()
+        {
+            return jb;
         }
     }
 
@@ -76,6 +92,7 @@ namespace Curs15.Decorator.Tema
     {
         private int cost = 3;
         private int quantity = 25;
+        private string name = "Rom";
 
         public int GetCost()
         {
@@ -85,14 +102,20 @@ namespace Curs15.Decorator.Tema
         {
             return this.quantity+quantity;
         }
+        public string GetName()
+        {
+            return name;
+        }
     }
 
     public class Tonic : IJuice
     {
         private int cost = 3;
         private int quantity = 25;
+        private string tonic = "Tonic";
 
         public IDrink Component { get; set; }
+        public int ginTonic { get; internal set; }
 
         public int GetCost()
         {
@@ -108,12 +131,17 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return quantity;
+        }
+        public string GetName()
+        {
+            return Component + tonic;
         }
     }
     public class Cola : IJuice
     {
         private int cost = 3;
         private int quantity = 25;
+        private string cola = "Cola";
 
         public IDrink Component { get; set; }
 
@@ -131,6 +159,11 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return quantity;
+        }
+
+        public string GetName()
+        {
+            return cola;
         }
     }
 
@@ -138,6 +171,7 @@ namespace Curs15.Decorator.Tema
     {
         private int cost = 3;
         private int quantity = 25;
+        private string orange = "Orange";
 
         public IDrink Component { get; set; }
 
@@ -155,6 +189,10 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return quantity;
+        }
+        public string GetName()
+        {
+            return orange;
         }
     }
 
@@ -162,6 +200,7 @@ namespace Curs15.Decorator.Tema
     {
         private int cost = 3;
         private int quantity = 25;
+        private string cranberry = "Cranberry";
 
         public IDrink Component { get; set; }
 
@@ -179,6 +218,10 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return quantity;
+        }
+        public string GetName()
+        {
+            return cranberry;
         }
     }
 }

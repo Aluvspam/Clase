@@ -22,7 +22,8 @@ namespace Clase
             }
         }
 
-        public int Energy
+
+        public new int Energy
         {
             get
             {
