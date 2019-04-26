@@ -13,11 +13,11 @@ namespace Curs15.Decorator.Tema
             IDrink gin = new Gin();
             IJuice orange = new Orange { Component = gin };
             Console.WriteLine("ginOrange name = " + orange.GetName());
-            Console.WriteLine("ginOrange volume = " + orange.GetQuantity());
+            Console.WriteLine("ginOrange volume = " + orange.GetLongDrinkQuantity());
             Console.WriteLine("ginOrange price = " + orange.GetCost());
             IJuice tonic = new Tonic { Component = gin };
             Console.WriteLine("ginTonic name = " + tonic.GetName());
-            Console.WriteLine("ginTonic volume = " + tonic.GetQuantity());
+            Console.WriteLine("ginTonic volume = " + tonic.GetLongDrinkQuantity());
             Console.WriteLine("ginTonic price = " + tonic.GetCost());
             Console.ReadLine();
         }

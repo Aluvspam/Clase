@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Curs15.Decorator.Tema
 {
     public interface IDrink
-    {    
+    {
         int GetCost();
         int GetQuantity();
         string GetName();
@@ -15,6 +15,7 @@ namespace Curs15.Decorator.Tema
     }
     public interface IJuice : IDrink
     {
+        int GetLongDrinkQuantity();
         IDrink Component
         {
             get; set;
@@ -23,7 +24,7 @@ namespace Curs15.Decorator.Tema
     }
     public interface ICocktail : IDrink, IJuice
     {
-        int TotalCost(int quantity, int cost,string name);
+        int TotalCost(int quantity, int cost, string name);
     }
 
     public class Gin : IDrink
@@ -38,7 +39,7 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return this.quantity + quantity;
+            return quantity;
         }
         public string GetName()
         {
@@ -58,13 +59,13 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return this.quantity + quantity;
+            return quantity;
         }
         public string GetName()
         {
             return vodka;
         }
-                
+
     }
 
     public class JB : IDrink
@@ -80,7 +81,7 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return this.quantity + quantity;
+            return quantity;
         }
         public string GetName()
         {
@@ -100,7 +101,7 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return this.quantity+quantity;
+            return quantity;
         }
         public string GetName()
         {
@@ -132,9 +133,20 @@ namespace Curs15.Decorator.Tema
         {
             return quantity;
         }
+        public int GetLongDrinkQuantity()
+        {
+            return quantity + Component.GetQuantity();
+        }
         public string GetName()
         {
-            return Component + tonic;
+            if (Component != null)
+            {
+                return tonic = Component.GetName() + ' ' + tonic;
+            }
+            else
+            {
+                return tonic;
+            }
         }
     }
     public class Cola : IJuice
@@ -159,6 +171,10 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return quantity;
+        }
+        public int GetLongDrinkQuantity()
+        {
+            return quantity + Component.GetQuantity();
         }
 
         public string GetName()
@@ -190,9 +206,21 @@ namespace Curs15.Decorator.Tema
         {
             return quantity;
         }
+        public int GetLongDrinkQuantity()
+        {
+            return quantity + Component.GetQuantity();
+        }
+
         public string GetName()
         {
-            return orange;
+            if (Component != null)
+            {
+                return orange = Component.GetName() + ' ' + orange;
+            }
+            else
+            {
+                return orange;
+            }
         }
     }
 
@@ -218,6 +246,10 @@ namespace Curs15.Decorator.Tema
         public int GetQuantity()
         {
             return quantity;
+        }
+        public int GetLongDrinkQuantity()
+        {
+            return quantity + Component.GetQuantity();
         }
         public string GetName()
         {
