@@ -47,6 +47,7 @@
     <Compile Include="Game.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="IScore.cs" />
+    <Compile Include="LiviuPlayer.cs" />
     <Compile Include="Moves.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
