@@ -15,19 +15,18 @@ namespace Curs15.Decorator.Tema
     }
     public interface IJuice : IDrink
     {
-        int GetLongDrinkQuantity();
         IDrink Component
         {
             get; set;
         }
 
     }
-    public interface ICocktail : IDrink, IJuice
-    {
-        int TotalCost(int quantity, int cost, string name);//dIANA  what does this do?
-        //TO DO: create some recipes example RumCola = CubaLibre ... create the drinks using the recipes 
-        IJuice CreateDrink(string name);
-    }
+    //public interface ICocktail : IDrink, IJuice
+    //{
+    //    int TotalCost(int quantity, int cost, string name);//dIANA  what does this do?
+    //    //TO DO: create some recipes example RumCola = CubaLibre ... create the drinks using the recipes 
+    //    IJuice CreateDrink(string name);
+    //}
 
     public class Gin : IDrink
     {
@@ -41,7 +40,7 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return this.quantity + quantity;
+            return quantity;
         }
         public string GetName()
         {
@@ -118,7 +117,6 @@ namespace Curs15.Decorator.Tema
         private string tonic = "Tonic";
 
         public IDrink Component { get; set; }
-        public int ginTonic { get; internal set; }
 
         public int GetCost()
         {
@@ -133,12 +131,16 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return quantity;
+            if (Component != null)
+            {
+                return quantity + Component.GetQuantity();
+            }
+            else
+            {
+                return quantity;
+            }
         }
-        public int GetLongDrinkQuantity()
-        {
-            return quantity + Component.GetQuantity();
-        }
+
         public string GetName()
         {
             if (Component != null)
@@ -172,11 +174,14 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return quantity;
-        }
-        public int GetLongDrinkQuantity()
-        {
-            return quantity + Component.GetQuantity();
+            if (Component != null)
+            {
+                return quantity + Component.GetQuantity();
+            }
+            else
+            {
+                return quantity;
+            }
         }
 
         public string GetName()
@@ -206,11 +211,14 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return quantity;
-        }
-        public int GetLongDrinkQuantity()
-        {
-            return quantity + Component.GetQuantity();
+            if (Component != null)
+            {
+                return quantity + Component.GetQuantity();
+            }
+            else
+            {
+                return quantity;
+            }
         }
 
         public string GetName()
@@ -247,12 +255,16 @@ namespace Curs15.Decorator.Tema
         }
         public int GetQuantity()
         {
-            return quantity;
+            if (Component != null)
+            {
+                return quantity + Component.GetQuantity();
+            }
+            else
+            {
+                return quantity;
+            }
         }
-        public int GetLongDrinkQuantity()
-        {
-            return quantity + Component.GetQuantity();
-        }
+
         public string GetName()
         {
             return cranberry;

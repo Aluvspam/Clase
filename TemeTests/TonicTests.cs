@@ -16,7 +16,7 @@ namespace Curs15.Decorator.Tema.Tests
         {
             IDrink gin = new Gin();
             IJuice tonic = new Tonic { Component = gin };
-            Assert.AreEqual(gin.GetName() + new Tonic().GetName(), tonic.GetName());
+            Assert.AreEqual(gin.GetName() + ' ' + new Tonic().GetName(), tonic.GetName());
         }
     }
 }

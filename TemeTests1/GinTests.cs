@@ -32,8 +32,8 @@ namespace Curs15.Decorator.Tema.Tests
             IJuice tonicQnt = new Tonic();
             IJuice ginOrange = new Orange { Component = gin };
             IJuice ginTonic = new Tonic { Component = gin };
-            Assert.AreEqual(orangeQnt.GetQuantity() + gin.GetQuantity(), ginOrange.GetLongDrinkQuantity());
-            Assert.AreEqual(tonicQnt.GetQuantity() + gin.GetQuantity(), ginTonic.GetLongDrinkQuantity());
+            Assert.AreEqual(orangeQnt.GetQuantity() + gin.GetQuantity(), ginOrange.GetQuantity());
+            Assert.AreEqual(tonicQnt.GetQuantity() + gin.GetQuantity(), ginTonic.GetQuantity());
         }
 
         [TestMethod()]
