@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{75DE4FDA-FBBF-4132-963C-D1C231EF7E11}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{3DA6DFED-63A0-4F83-A752-0F10E4E676EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Teme</RootNamespace>
-    <AssemblyName>Teme</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>NoStrategy</RootNamespace>
+    <AssemblyName>NoStrategy</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractTopping.cs" />
-    <Compile Include="George.cs" />
-    <Compile Include="Factorial.cs" />
-    <Compile Include="IDrink.cs" />
-    <Compile Include="IPizza.cs" />
-    <Compile Include="Mozzarella.cs" />
-    <Compile Include="Peperoni.cs" />
-    <Compile Include="RunExamples.cs" />
-    <Compile Include="Shrooms.cs" />
-    <Compile Include="TemaRunExamples.cs" />
-    <Compile Include="TemeMain.cs" />
+    <Compile Include="AbstractEntity.cs" />
+    <Compile Include="Bird.cs" />
+    <Compile Include="Dog.cs" />
+    <Compile Include="Drone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="World.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

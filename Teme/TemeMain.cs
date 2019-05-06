@@ -11,9 +11,12 @@ namespace Teme
     {
         static void Main(string[] args)
         {
+            Curs15.Decorator.Tema.TemaRunExamples.Run();
+            int[] arr = new int[40];
             //CountDown(20);
-
+            Curs15.Decorator.RunExamples.Run();
             Console.WriteLine(Euclid(30, 20));
+            Console.WriteLine(Cmmdc(arr));
 
             Cmmdc(20, 15);
             Console.Read();
@@ -51,8 +54,15 @@ namespace Teme
             //conditia de terminare / stop
             if (arr.Length <= 2)
             {
-                //TO DO: write code for cases when arr has no elements
-                return Cmmdc(arr[0], arr[arr.Length - 1]);
+                if (arr.Length == 0)
+                {
+                    return 0; //TO DO: write code for cases when arr has no elements// Done
+                }
+                else
+                {
+
+                    return Cmmdc(arr[0], arr[arr.Length - 1]);
+                }
             }
             int[] numere = new int[arr.Length - 1];
             for (int i = 0; i < arr.Length - 2; i++)
