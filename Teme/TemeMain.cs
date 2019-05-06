@@ -11,7 +11,7 @@ namespace Teme
     {
         static void Main(string[] args)
         {
-            StateProject.Client.Run();
+            //StateProject.Client.Run();
             Curs15.Decorator.Tema.TemaRunExamples.Run();
             int[] arr = new int[40];
             //CountDown(20);

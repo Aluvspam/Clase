@@ -10,6 +10,18 @@ namespace Curs15.Decorator.Tema
     {
         public static void Run()
         {
+            Action exampleDrink = ExampleDrinks;
+            Action exempluPizza = examplePizza;
+            exampleDrink.Invoke();
+            Action[] actions = new Action[] { exampleDrink, exempluPizza, exampluQueue };
+            foreach (var action in actions)
+            {
+                action.Invoke();
+            }
+            Console.ReadLine();
+        }
+        static void ExampleDrinks()
+        {
             IDrink gin = new Gin();
             IJuice orange = new Orange { Component = gin };
             Console.WriteLine("ginOrange name = " + orange.GetName());
@@ -19,7 +31,18 @@ namespace Curs15.Decorator.Tema
             Console.WriteLine("ginTonic name = " + tonic.GetName());
             Console.WriteLine("ginTonic volume = " + tonic.GetQuantity());
             Console.WriteLine("ginTonic price = " + tonic.GetCost());
-            Console.ReadLine();
+        }
+        static void examplePizza()
+        {
+            //codul aici
+        }
+        static void exampluQueue()
+        {
+            Queue<int> myQueue = new Queue<int>();
+            myQueue.Enqueue(17);
+            myQueue.Enqueue(19);
+            Console.WriteLine(myQueue.Dequeue());
+            Console.WriteLine(myQueue.Count);
         }
     }
 }
