@@ -36,7 +36,7 @@ namespace Curs15.Decorator.Tema
         {
             //codul aici
         }
-        static void exampluQueue()
+        public static void exampluQueue()
         {
             Queue<int> myQueue = new Queue<int>();
             myQueue.Enqueue(17);
