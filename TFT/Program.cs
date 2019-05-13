@@ -38,7 +38,7 @@ namespace TFT
             IPlayer random = new RandomPlayer2();
             //IPlayer ovidiu = new ClassPlayerOvidiu();
             IPlayer diana = new DianaPlayer();
-            IPlayer liviu = new LiviuPlayer();
+            //IPlayer liviu = new LiviuPlayer();
             //var game = new Game(cristi2, boss);
             //var var = boss.GetType().ToString();
             players = new List<IPlayer>();

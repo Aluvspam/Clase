@@ -33,14 +33,6 @@ namespace Clase
             }
         }
 
-        public int Energy
-        {
-            get
-            {
-                return energy;
-            }
-        }
-
         public override void Feed()
         {
             this.energy += 44;
