@@ -22,12 +22,8 @@ namespace EventsAndDelegates
         }
         public static void AltaMetoda()
         {
-            Afisaj afisaj = new Afisaj();
-            while (true)
-            {
-                MeteoStation.Instance.Run();
-                afisaj.Afisare();
-            }
+            AbstractObserver afisaj = new Afisaj2();
+            MeteoStation.Instance.Run();
             var del = new ProfusDelegate();
             AndreisDelegate ad1 = del.RunMultipleTimes;
             AndreisDelegate ad2 = AfisareNumar;

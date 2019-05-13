@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractObserver.cs" />
     <Compile Include="Afisaj.cs" />
+    <Compile Include="Afisaj2.cs" />
     <Compile Include="AndreisArgs.cs" />
     <Compile Include="MeteoStation.cs" />
     <Compile Include="ProfusDelegate.cs" />

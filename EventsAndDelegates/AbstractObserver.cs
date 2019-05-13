@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace EventsAndDelegates
 {
-    class Afisaj : AbstractObserver
+    class AbstractObserver
     {
-        public Afisaj()
+        public AndreisDelegate Update;
+        public virtual void Abonare()
         {
-            Update = (int temp) => { Console.WriteLine(temp); };
-            Abonare();
+            MeteoStation.Instance.Attach(Update);
         }
     }
 }

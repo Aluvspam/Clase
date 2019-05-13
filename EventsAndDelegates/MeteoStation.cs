@@ -11,6 +11,7 @@ namespace EventsAndDelegates
         int temperature;
         Random r;
         static MeteoStation instance;
+        public static event AndreisDelegate TempChange;
         public int Temperature
         {
             get
@@ -36,23 +37,38 @@ namespace EventsAndDelegates
         }
         public void Run()
         {
-            var a = Instance.r.Next(77);
-            if (a == 0)
+            while (true)
             {
-                temperature--;
+                var a = Instance.r.Next(77);
+                if (a == 0)
+                {
+                    temperature--;
+                }
+                else if (a == 76)
+                {
+                    temperature++;
+                }
+                else if (temperature > 0 && a == 1)
+                {
+                    temperature--;
+                }
+                else if (temperature < -40 && a == 75)
+                {
+                    temperature++;
+                }
+                else
+                {
+                    continue;
+                }
+                if (TempChange != null)
+                {
+                    TempChange.Invoke(temperature);
+                }
             }
-            else if (a == 76)
-            {
-                temperature++;
-            }
-            else if (temperature > 0 && a == 1)
-            {
-                temperature--;
-            }
-            else if (temperature < -40 && a == 75)
-            {
-                temperature++;
-            }
+        }
+        public void Attach(AndreisDelegate toDoWhen)
+        {
+            TempChange += toDoWhen;
         }
     }
 }
