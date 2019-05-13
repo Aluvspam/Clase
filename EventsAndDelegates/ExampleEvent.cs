@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace EventsAndDelegates
 {
     public delegate void AndreisDelegate(int x);
+    public delegate int Sum2(int a, int b);
     public class ExampleEvent
     {
         private ExampleEvent()
@@ -30,6 +31,10 @@ namespace EventsAndDelegates
         public event EventHandler Xevent3;
         public static void Main(string[] args)
         {
+            // exemplu metoda anonima
+            Sum2 SumaMea = (int a, int b) => { return a + b; };
+            Console.WriteLine(SumaMea(3, 7));
+
             ProfusDelegate.AltaMetoda();
             Console.ReadLine();
             var r = new Random();
