@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-
+using Patterns.ChainOfResponsibility;
 namespace Teme
 {
     class TemeMain
     {
         static void Main(string[] args)
         {
+            ExempluCoR();
             //StateProject.Client.Run();
             Curs15.Decorator.Tema.TemaRunExamples.Run();
             int[] arr = new int[40];
@@ -22,7 +22,19 @@ namespace Teme
             Cmmdc(20, 15);
             Console.Read();
         }
-
+        static void ExempluCoR()
+        {
+            var myMessage = new Message() { Body = "iii", language = "Roman" };
+            var myMessage2 = new Message() { Body = "xi", language = "Roman" };
+            var myMessage3 = new Message() { Body = "One", language = "Eng" };
+            Message[] mesaje = new Message[] { myMessage, myMessage2, myMessage3, new Message() { Body = "doi", language = "Ro" } };
+            var myHandler = new RomanHandler();
+            myHandler.nextHandler = new RoHandler();
+            foreach (var mesaj in mesaje)
+            {
+                Console.WriteLine(myHandler.Handle(mesaj));
+            }
+        }
         static void CountDown(int num)
         {
             if (num < 0)

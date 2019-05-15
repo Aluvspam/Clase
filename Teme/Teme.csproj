@@ -60,6 +60,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Patterns\Patterns.csproj">
+      <Project>{dbdae864-fe04-4e3a-9f11-a9b5eccf71b5}</Project>
+      <Name>Patterns</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StateProject\StateProject.csproj">
       <Project>{07e4e40a-df73-45fa-9f30-bd65a049cd8f}</Project>
       <Name>StateProject</Name>
