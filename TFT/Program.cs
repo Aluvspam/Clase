@@ -25,7 +25,7 @@ namespace TFT
         {
             RunTFT();
         }
-        
+
 
         private static void RunTFT()
         {
@@ -41,10 +41,16 @@ namespace TFT
             //IPlayer liviu = new LiviuPlayer();
             //var game = new Game(cristi2, boss);
             //var var = boss.GetType().ToString();
-            players = new List<IPlayer>();
             //players.Add(cristi);
-            players.Add(random);
             //players.Add(ovidiu);
+            IPlayer manu = new ManuPlayer();
+            IPlayer manu2 = new ManuPlayer2();
+            IPlayer teo = new Teo1();
+            IPlayer liviu = new LiviuPlayer();
+            IPlayer dan = new DanielPlayer();
+            IPlayer dan2 = new DanielPlayer2();
+            players = new List<IPlayer> { diana, manu, manu2, teo, liviu, dan, dan2 };
+
             if (excelAvailable)
             {
                 //_Workbook xlWorkBook = xlApp.Workbooks.Add();

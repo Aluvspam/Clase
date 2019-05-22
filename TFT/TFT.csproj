@@ -43,10 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DanielPlayer.cs" />
+    <Compile Include="DanielPlayer2.cs" />
     <Compile Include="DianaPlayer.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="IScore.cs" />
+    <Compile Include="LiviuPlayer.cs" />
     <Compile Include="ManuPlayer.cs" />
     <Compile Include="ManuPlayer2.cs" />
     <Compile Include="Moves.cs" />
