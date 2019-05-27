@@ -49,7 +49,8 @@ namespace TFT
             IPlayer liviu = new LiviuPlayer();
             IPlayer dan = new DanielPlayer();
             IPlayer dan2 = new DanielPlayer2();
-            players = new List<IPlayer> { diana, manu, manu2, teo, liviu, dan, dan2 };
+            IPlayer profu = new DanielPlayer2();
+            players = new List<IPlayer> { diana, manu, manu2, teo, liviu, dan, dan2, profu, random };
 
             if (excelAvailable)
             {

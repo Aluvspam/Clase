@@ -195,7 +195,7 @@ namespace TFT
             {
                 r = player2.MyMove(lastMove2, lastMove1);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 r = Moves.B;
             }
