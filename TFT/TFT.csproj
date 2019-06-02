@@ -46,6 +46,7 @@
     <Compile Include="DanielPlayer.cs" />
     <Compile Include="DanielPlayer2.cs" />
     <Compile Include="DianaPlayer.cs" />
+    <Compile Include="DianaPlayer2.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="IScore.cs" />
