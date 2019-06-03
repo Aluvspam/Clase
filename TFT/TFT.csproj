@@ -52,7 +52,7 @@
     <Compile Include="IScore.cs" />
     <Compile Include="LiviuPlayer.cs" />
     <Compile Include="ManuPlayer.cs" />
-    <Compile Include="ManuPlayer2.cs" />
+    <Compile Include="ManuReloaded.cs" />
     <Compile Include="Moves.cs" />
     <Compile Include="PlayerCuListe.cs" />
     <Compile Include="Program.cs" />

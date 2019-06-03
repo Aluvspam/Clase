@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TFT
 {
-    class ManuPlayer2 : IPlayer, IScore
+    class ManuReloaded : IPlayer, IScore
     {
         public int Score
         {
@@ -16,7 +16,7 @@ namespace TFT
             }
         }
         Random rnd;
-        public ManuPlayer2()
+        public ManuReloaded()
         {
             rnd = new Random();
 
@@ -29,25 +29,30 @@ namespace TFT
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
+            if (myLastMove == Moves.C && othersLastMove == Moves.D)
+            {
+                return Moves.C;
+            }
+            else if (myLastMove == Moves.B && othersLastMove == Moves.C)
+            {
+                return Moves.C;
+            }
+            else if (myLastMove == Moves.C && othersLastMove == Moves.D)
+            {
+                return Moves.D;
+            }
 
-            if (othersLastMove == Moves.D)
+            else
             {
                 return Moves.D;
             }
-            if (othersLastMove == Moves.C)
-            {
-                return Moves.D;
-            }
-            if (othersLastMove == Moves.B)
-            {
-                return Moves.D;
-            }
-            return Moves.D;
-        }
 
-        private Moves RandomMove()
-        {
-            return (rnd.Next(2) == 0) ? Moves.C : Moves.D;
+
+
+            private Moves ManuReloaded()
+
+            {
+                return ((new Random()).Next(2) == 0) ? Moves.C : Moves.D;
+            }
         }
-    }
-}
+    } }

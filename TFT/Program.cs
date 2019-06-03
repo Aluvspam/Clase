@@ -44,7 +44,7 @@ namespace TFT
             //players.Add(cristi);
             //players.Add(ovidiu);
             IPlayer manu = new ManuPlayer();
-            IPlayer manu2 = new ManuPlayer2();
+            IPlayer manu2 = new ManuReloaded();
             IPlayer teo = new Teo1();
             IPlayer liviu = new LiviuPlayer();
             IPlayer dan = new DanielPlayer();
