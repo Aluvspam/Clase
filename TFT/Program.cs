@@ -44,17 +44,15 @@ namespace TFT
             //players.Add(cristi);
             //players.Add(ovidiu);
             IPlayer manu = new ManuPlayer();
-            IPlayer manu2 = new ManuPlayer2();
+            IPlayer manu2 = new ManuReloaded();
             IPlayer teo = new Teo1();
             IPlayer liviu = new LiviuPlayer();
             IPlayer dan = new DanielPlayer();
             IPlayer dan2 = new DanielPlayer2();
             IPlayer profu = new DanielPlayer2();
             IPlayer diana2 = new DianaPlayer2();
-            IPlayer plb = new PlayLikeABoss();
-            IPlayer p2 = new Player2();
 
-            players = new List<IPlayer> { diana, diana2, manu, manu2, teo, liviu, dan, dan2, profu, random, plb, p2 };
+            players = new List<IPlayer> { diana,diana2, manu, manu2, teo, liviu, dan, dan2, profu, random };
 
             if (excelAvailable)
             {
