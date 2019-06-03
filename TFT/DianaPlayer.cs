@@ -31,8 +31,16 @@ namespace TFT
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
-            return Moves.D;
+            if (myLastMove == Moves.C && othersLastMove == Moves.C)
+            {
+                return Moves.C;
+            }
+            else
+            {
+                return Moves.D;
+            }
         }
+
         public List<string> MoveALot()
         {
             List<string> correctMoves = new List<string>(); // B-B B-C B-D C-B C-C C-D D-B D-C D-D
