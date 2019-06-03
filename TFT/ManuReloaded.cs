@@ -48,11 +48,12 @@ namespace TFT
             }
 
 
-
-            private Moves ManuReloaded()
-
-            {
-                return ((new Random()).Next(2) == 0) ? Moves.C : Moves.D;
-            }
         }
-    } }
+        private Moves ManuMoves()
+        {
+            return ((new Random()).Next(2) == 0) ? Moves.C : Moves.D;
+        }
+    }
+
+} 
+
