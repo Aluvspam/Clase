@@ -19,6 +19,7 @@ namespace TFT
             Subscribe(Ids.id2, Event2Handler);
             Invoke(Ids.id1);
             moves = 1;
+            flag = false;
             return strategy.FirstMove();
         }
 

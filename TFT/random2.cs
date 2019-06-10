@@ -27,8 +27,6 @@ namespace TFT
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
-            var v = 0;
-            var b = 3 / v;
             return RandomMove();
         }
 
