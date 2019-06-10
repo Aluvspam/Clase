@@ -20,7 +20,7 @@ namespace Curs20.AbstractFactory
                 engine = value;
             }
         }
-        internal AbstractWheels Wheels { get; set; }
+        internal AbstractWheels Wheels { get => wheels; set => wheels = value; }
 
         public void AddOption(Option option)
         {
