@@ -12,7 +12,7 @@ namespace Clase
         private int age = 28;
         public int getAge()
         {
-        return 20;
+        return age;
         }
       }
  }

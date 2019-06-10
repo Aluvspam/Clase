@@ -130,26 +130,26 @@ namespace TFT
                 r = Moves.B;//solutie de avarie
             }
 
-            catch (IndexOutOfRangeException e)
+            catch (IndexOutOfRangeException)
             {
                 Console.WriteLine("atentie la index!!!");
                 //logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;//solutie de avarie
             }
-            catch (NullReferenceException e)
+            catch (NullReferenceException)
             {
                 Console.WriteLine("Atentie la referinta! Nu exista o instanta a obiectului!");
                 //logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;
             }
 
-            catch (TimeoutException e)
+            catch (TimeoutException)
             {
                 Console.WriteLine("(Dana) Timpul tau a expirat :) Exceptia de mai jos le-a prins deja pe toate.");
                 //logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 //logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;//solutie de avarie
@@ -195,7 +195,7 @@ namespace TFT
             {
                 r = player2.MyMove(lastMove2, lastMove1);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 r = Moves.B;
             }

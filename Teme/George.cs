@@ -8,10 +8,11 @@ namespace Teme
 {
     class George
     {
+        // commented all out since this is never used, class should be erased
         //update from GBranch
-        private int x = 0;
+        //private int x = 0;
 
         //new change
-        private int y = 1;
+        //private int y = 1;
     }
 }

@@ -8,9 +8,10 @@ namespace Clase
 {
     class Swan : HunterAnimal
     {
-        public string colour;
+        private string colour;
         public int Food;
 
+        public string Colour { get => colour; set => colour = value; }
 
         public Swan(int food, int age, int energy, int health) : base()
         {
