@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs20", "Curs20\Curs20.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{B069BE0B-D7B1-4290-AF51-1643EA05EA70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads", "Threads\Threads.csproj", "{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -369,6 +371,26 @@ Global
 		{B069BE0B-D7B1-4290-AF51-1643EA05EA70}.Release|x64.Build.0 = Release|Any CPU
 		{B069BE0B-D7B1-4290-AF51-1643EA05EA70}.Release|x86.ActiveCfg = Release|Any CPU
 		{B069BE0B-D7B1-4290-AF51-1643EA05EA70}.Release|x86.Build.0 = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|ARM.Build.0 = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|x64.Build.0 = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|ARM.Build.0 = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|ARM64.Build.0 = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|x64.ActiveCfg = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|x64.Build.0 = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A91C14C-2C8A-4BA3-BED7-F15ACB56D6FE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
