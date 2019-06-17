@@ -19,9 +19,13 @@ namespace Scaun
             Console.WriteLine("a = {0}", a);
             Console.WriteLine("b = {0}", b);
             swapL(ref a, ref b);
+
             Console.WriteLine("a = {0}", a);
             Console.WriteLine("b = {0}", b);
             var result = new List<char>();
+
+            var arr = new int[] { 5, 1, 11, 3, 6, 7, 10, 13, 8 };
+            BubbleSort(arr);
 
             result = ProblemaInterviu(V);
             Console.ReadLine();
@@ -53,6 +57,33 @@ namespace Scaun
             a = a + b;
             b = a - b;
             a = a - b;
+        }
+
+        public static void BubbleSort(int[] NumeArray)
+        {
+            int swapped;
+            int n = NumeArray.Length -1;
+            do
+            {
+                swapped = 0;
+
+                for (int i = 0; i <= n - 1; i++)
+                {
+                    if (NumeArray[i] > NumeArray[i + 1])
+                    {
+                        swapL(ref NumeArray[i], ref NumeArray[i + 1]);
+                        swapped = 1;
+                    }
+                    
+                }
+                n--;
+            }
+            while (swapped == 1);
+
+            for (int i = 0; i < NumeArray.Length; i++)
+            {
+                Console.WriteLine(NumeArray[i] + " ");
+            }
         }
     }
 }
