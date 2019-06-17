@@ -47,5 +47,12 @@ namespace Scaun
             b = a;
             a = c;
         }
+
+        public static void swapT(ref int a, ref int b)
+        {
+            a = a + b;
+            b = a - b;
+            a = a - b;
+        }
     }
 }
