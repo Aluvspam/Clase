@@ -60,27 +60,32 @@ namespace Battleship
             bool ok = false;
             foreach (var ship in Fleet)
             {
-                if (ship.Spaces.ContainsKey(attack))
+                foreach(var space in ship.Spaces)
                 {
-                    ok = true;
-                    ship.Spaces.Remove(attack);
-                    if(ship.Spaces.Count() > 0)
+                    if (attack == space.Key)
                     {
-                        result = "hit";
-                    }
-                    else
-                    {
-                        Fleet.Remove(ship);
-                        if(Fleet.Count() > 0)
+                        ok = true;
+                        ship.Spaces.Remove(attack);
+                        if (ship.Spaces.Count() > 0)
                         {
-                            result = "sink";
+                            result = "hit";
                         }
                         else
                         {
-                            result = "surrender";
+                            Fleet.Remove(ship);
+                            if (Fleet.Count() > 0)
+                            {
+                                result = "sink";
+                            }
+                            else
+                            {
+                                result = "surrender";
+                            }
                         }
                     }
+
                 }
+
             }
             if(ok == false)
             {
