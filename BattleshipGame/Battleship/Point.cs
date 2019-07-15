@@ -27,5 +27,10 @@ namespace Battleship
         {
             return !(obj1.x == obj2.x && obj1.y == obj2.y);
         }
+
+        public override string ToString()
+        {
+            return "(" + x + ", " + y + ")";
+        }
     }
 }
