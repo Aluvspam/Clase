@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class Player
+    public class Player
     {
         private Dictionary<Point, bool> map;
         

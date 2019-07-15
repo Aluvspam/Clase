@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class Point
+    public class Point
     {
         public int x;
         public int y;
