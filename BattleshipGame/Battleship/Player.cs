@@ -65,7 +65,7 @@ namespace Battleship
                     if (attack == space.Key)
                     {
                         ok = true;
-                        ship.Spaces.Remove(attack);
+                        ship.Spaces.Remove(space.Key);
                         if (ship.Spaces.Count() > 0)
                         {
                             result = "hit";
