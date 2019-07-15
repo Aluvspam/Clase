@@ -16,5 +16,16 @@ namespace Battleship
             this.x = x;
             this.y = y;
         }
+        // this is first one '=='
+        public static bool operator ==(Point obj1, Point obj2)
+        {
+            return (obj1.x == obj2.x && obj1.y == obj2.y);
+        }
+
+        // this is second one '!='
+        public static bool operator !=(Point obj1, Point obj2)
+        {
+            return !(obj1.x == obj2.x && obj1.y == obj2.y);
+        }
     }
 }
