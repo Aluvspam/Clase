@@ -18,23 +18,17 @@ namespace Battleship
             var p2 = new Point(1, 2);
             var minesweeper1 = new Ship(p1,p2);
 
-            p1.x = 7;
-            p1.y = 1;
-            p2.x = 7;
-            p2.y = 2;
-            var minesweeper2 = new Ship(p1, p2);
+            var p3 = new Point(7, 1);
+            var p4 = new Point(7, 2);
+            var minesweeper2 = new Ship(p3, p4);
 
-            p1.x = 4;
-            p1.y = 5;
-            p2.x = 6;
-            p2.y = 5;
-            var battleship = new Ship(p1, p2);
-            
-            p1.x = 9;
-            p1.y = 5;
-            p2.x = 9;
-            p2.y = 8;
-            var destroyer = new Ship(p1, p2);
+            var p5 = new Point(4, 5);
+            var p6 = new Point(6, 5);
+            var battleship = new Ship(p5, p6);
+
+            var p7 = new Point(9, 5);
+            var p8 = new Point(9, 8);
+            var destroyer = new Ship(p7, p8);
 
             Fleet = new List<Ship>() { minesweeper1, minesweeper2, battleship, destroyer };
 
