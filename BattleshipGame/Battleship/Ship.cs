@@ -17,12 +17,12 @@ namespace Battleship
 
             this.Start = Start;
             this.Finish = Finish;
-            var s = new Dictionary<Point, bool>();
+            Spaces = new Dictionary<Point, bool>();
             if (Start.x == Finish.x)
             {
                 for(int i = Start.y; i <= Finish.y; i++)
                 {
-                    s.Add(new Point(Start.x, i), true);
+                    Spaces.Add(new Point(Start.x, i), true);
                 }
             }
 
@@ -30,7 +30,7 @@ namespace Battleship
             {
                 for (int i = Start.x; i <= Finish.x; i++)
                 {
-                    s.Add(new Point(i, Start.y), true);
+                    Spaces.Add(new Point(i, Start.y), true);
                 }
             }
         }
