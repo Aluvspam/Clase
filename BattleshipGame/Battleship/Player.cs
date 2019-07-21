@@ -87,7 +87,6 @@ namespace Battleship
                     }
                 }
             }
-
             if (!hit)
             {
                 result = "miss";
