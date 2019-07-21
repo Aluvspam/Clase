@@ -85,22 +85,10 @@ namespace Battleship
                 }
             }
 
-            if (hit == false)
+            if (!hit)
             {
                 result = "miss";
             }
-
-
-
-            //if (map.ContainsKey(attack))
-            //{
-            //    map[attack] = false; 
-            //}
-            //else
-            //{
-            //    result = "miss";
-            //}
-
             return result;
         }
 
@@ -108,7 +96,7 @@ namespace Battleship
         {
             foreach (var ship in Fleet)
             {
-                if (ship.Alive == true)
+                if (ship.Alive)
                 {
                     return true;
                 }
