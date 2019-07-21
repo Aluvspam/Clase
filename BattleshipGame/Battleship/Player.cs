@@ -9,14 +9,14 @@ namespace Battleship
     public class Player
     {
         private Dictionary<Point, bool> map;
-        
+
         private List<Ship> Fleet;
 
         public Player()
         {
             var p1 = new Point(1, 2);
             var p2 = new Point(1, 1);
-            var minesweeper1 = new Ship(p1,p2);
+            var minesweeper1 = new Ship(p1, p2);
 
             var p3 = new Point(7, 1);
             var p4 = new Point(7, 2);
@@ -60,13 +60,13 @@ namespace Battleship
             bool hit = false;
             foreach (var ship in Fleet)
             {
-                foreach(var space in ship.Spaces)
+                foreach (var space in ship.Spaces)
                 {
-                    if (attack == space.Key)
+                    if (attack == space.Key && space.Value == true)
                     {
                         hit = true;
-                        ship.Spaces.Remove(space.Key);//ii dau false
-                        if (ship.Spaces.Count() > 0)
+                        ship.Spaces[space.Key] = false;
+                        if (ship.Spaces.ContainsValue(true))
                         {
                             result = "hit";
                         }
@@ -83,11 +83,9 @@ namespace Battleship
                             }
                         }
                     }
-
                 }
-
             }
-            if(hit == false)
+            if (hit == false)
             {
                 result = "miss";
             }
