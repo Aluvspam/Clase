@@ -14,8 +14,8 @@ namespace Battleship
 
         public Player()
         {
-            var p1 = new Point(1, 1);
-            var p2 = new Point(1, 2);
+            var p1 = new Point(1, 2);
+            var p2 = new Point(1, 1);
             var minesweeper1 = new Ship(p1,p2);
 
             var p3 = new Point(7, 1);
@@ -65,7 +65,7 @@ namespace Battleship
                     if (attack == space.Key)
                     {
                         ok = true;
-                        ship.Spaces.Remove(space.Key);
+                        ship.Spaces.Remove(space.Key);//ii dau false
                         if (ship.Spaces.Count() > 0)
                         {
                             result = "hit";
