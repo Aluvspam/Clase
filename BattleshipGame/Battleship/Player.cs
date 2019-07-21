@@ -62,23 +62,26 @@ namespace Battleship
             {
                 foreach (var space in ship.Spaces)
                 {
-                    if (attack == space.Key && space.Value == true)
+                    if (attack == space.Key && space.Value)
                     {
                         hit = true;
                         ship.Spaces[space.Key] = false;
-                        if (ship.Spaces.ContainsValue(true))
+                        if (ship.Alive)
                         {
                             result = "hit";
+                            break;
                         }
                         else
                         {
-                            if (FleetAlive() == true)
+                            if (FleetAlive())
                             {
                                 result = "sink";
+                                break;
                             }
                             else
                             {
                                 result = "surrender";
+                                break;
                             }
                         }
                     }
