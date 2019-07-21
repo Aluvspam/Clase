@@ -18,19 +18,19 @@ namespace Battleship
             this.Start = Start;
             this.Finish = Finish;
             Spaces = new Dictionary<Point, bool>();
-            if (Start.x == Finish.x)
+            if (Start.row == Finish.row)
             {
-                for(int i = Start.y; i <= Finish.y; i++)
+                for(int i = Start.column; i <= Finish.column; i++)
                 {
-                    Spaces.Add(new Point(Start.x, i), true);
+                    Spaces.Add(new Point(Start.row, i), true);
                 }
             }
 
-            if (Start.y == Finish.y)
+            if (Start.column == Finish.column)
             {
-                for (int i = Start.x; i <= Finish.x; i++)
+                for (int i = Start.row; i <= Finish.row; i++)
                 {
-                    Spaces.Add(new Point(i, Start.y), true);
+                    Spaces.Add(new Point(i, Start.column), true);
                 }
             }
         }
