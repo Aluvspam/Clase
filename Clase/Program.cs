@@ -10,6 +10,7 @@ namespace Clase
     {
         public static void Main(string[] args)
         {
+            
             new Exercitii().GradinaZoologica();
             var fierari = new Car("", "", null, 0);
             AfisareMasini(new Car[] { fierari });
@@ -67,7 +68,7 @@ namespace Clase
             {
                 Console.WriteLine(item.Key.Name + " " + item.Key.Points + " " + item.Value);
             }
-            Dog dog = new Dog("Patrocle", 50, 55, 6);
+            Dog dog = new Dog("Patrocle", 50, 55, 6,50);
 
             dog.GrowOlder();
 
@@ -76,7 +77,7 @@ namespace Clase
             Person person = new Person(Gender.male, "Femele", null, "", null, 0, null, false);
             //person.AdoptPet(dog);
 
-            Dog dog2 = new Dog("Patrocle2", 50, 55, 6);
+            Dog dog2 = new Dog("Patrocle2", 50, 55, 6,50);
             Console.WriteLine("Patrocle2: " + dog2.Id);
             //Console.WriteLine(person.Pets.Count);
             Employee Andrei = new Employee();
@@ -85,11 +86,15 @@ namespace Clase
             Andrei.Skil = "";
             Andrei.Name = "Andrei";
             Andrei.WriteEmployee();
-            Croc Croky = new Croc();
+            Croc Croky = new Croc("Croky");
             Croky.Feed();
             Croky.GrowOlder();
             Croky.Move();
             Croky.Talk();
+            /*
+            Cat pisicuta = new Cat();
+            pisicuta.EatAnimal();
+            */
             Console.ReadKey();
         }
         static void AfisareMasini(Car[] masini)
@@ -98,6 +103,7 @@ namespace Clase
             {
                 Console.WriteLine("masina " + masina.Make + " " + masina.Model + " cu ID " + masina.Id + " are culoarea " + masina.Colour);
             }
+            Console.ReadLine();
         }
-    }
+    } 
 }

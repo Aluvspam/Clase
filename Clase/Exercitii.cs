@@ -10,12 +10,12 @@ namespace Clase
     {
         public void GradinaZoologica()
         {
-            Dog dog = new Dog("Patrocle", 50, 55, 6);
+            Dog dog = new Dog("Patrocle", 50, 55, 6,50);
             Employee zooKeeper = new Employee(/*Gender.male, "Femele", null, "", null, 0, null, false*/);
             zooKeeper.AdoptPet(dog);
-            Dog dog2 = new Dog("Patrocle2", 50, 55, 6);
+            Dog dog2 = new Dog("Patrocle2", 50, 55, 6,50);
             zooKeeper.AdoptPet(dog2);
-            Croc Croky = new Croc();
+            Croc Croky = new Croc("Croky");
             Console.WriteLine("Croky status");
             Croky.ShowStatus();
             Croky.Swim();
@@ -50,12 +50,12 @@ namespace Clase
             crockyCroco.ShowStatus();
             Console.WriteLine("Croky status after crockyCroco swimmed");
             Croky.ShowStatus();
-            var Acroc = new Croc();
+            var Bismarck = new Croc("Bismarck");
             Console.WriteLine("Acroc status");
-            Acroc.ShowStatus();
-            Acroc.Swim();
+            Bismarck.ShowStatus();
+            Bismarck.Swim();
             Console.WriteLine("Acroc status after swimming");
-            Acroc.ShowStatus();
+            Bismarck.ShowStatus();
             Console.WriteLine("Croky status after Acroc swimmed");
             Croky.ShowStatus();
             //var cutuCroco = (Croc)zooKeeper.Pets[1];

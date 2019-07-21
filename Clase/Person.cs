@@ -8,6 +8,13 @@ namespace Clase
 {
     public class Person
     {
+        //TO DO: Teo add a field to tell us how many eggs a person hasp
+        //and create a method to buy eggs from another Person
+        //and add a field wallet to count the money a person has
+        public int eggs;
+        public long wallet;
+        private const long PRICE = 5;
+
         public Gender Gender { get; set; }
         public string Name { get; set; }
         public Address Address;
@@ -29,9 +36,19 @@ namespace Clase
             this.smokes = smokes;
         }
 
+        public void BuyEggs(Person seller, int eggs)
+        {
+            this.eggs = this.eggs + eggs;
+            seller.eggs = seller.eggs - eggs;
+            wallet = wallet - eggs * PRICE;
+            seller.wallet = seller.wallet + eggs * PRICE;
+        }
+
+
         public void AdoptPet(Animal newPet)
         {
             Pets.Add(newPet);
+            newPet.owner = this;
         }
     }
 }

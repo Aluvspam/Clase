@@ -43,13 +43,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractTopping.cs" />
     <Compile Include="George.cs" />
     <Compile Include="Factorial.cs" />
+    <Compile Include="IDrink.cs" />
+    <Compile Include="IPizza.cs" />
+    <Compile Include="Mozzarella.cs" />
+    <Compile Include="Peperoni.cs" />
+    <Compile Include="RunExamples.cs" />
+    <Compile Include="Shrooms.cs" />
+    <Compile Include="TemaRunExamples.cs" />
     <Compile Include="TemeMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Patterns\Patterns.csproj">
+      <Project>{dbdae864-fe04-4e3a-9f11-a9b5eccf71b5}</Project>
+      <Name>Patterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StateProject\StateProject.csproj">
+      <Project>{07e4e40a-df73-45fa-9f30-bd65a049cd8f}</Project>
+      <Name>StateProject</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
