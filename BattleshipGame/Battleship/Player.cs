@@ -57,14 +57,14 @@ namespace Battleship
         public string Attack(Point attack)
         {
             string result = null;
-            bool ok = false;
+            bool hit = false;
             foreach (var ship in Fleet)
             {
                 foreach(var space in ship.Spaces)
                 {
                     if (attack == space.Key)
                     {
-                        ok = true;
+                        hit = true;
                         ship.Spaces.Remove(space.Key);
                         if (ship.Spaces.Count() > 0)
                         {
@@ -87,7 +87,7 @@ namespace Battleship
                 }
 
             }
-            if(ok == false)
+            if(hit == false)
             {
                 result = "miss";
             }
