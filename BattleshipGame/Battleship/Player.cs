@@ -72,8 +72,7 @@ namespace Battleship
                         }
                         else
                         {
-                            Fleet.Remove(ship);
-                            if (Fleet.Count() > 0)
+                            if (FleetAlive() == true)
                             {
                                 result = "sink";
                             }
@@ -85,10 +84,13 @@ namespace Battleship
                     }
                 }
             }
+
             if (hit == false)
             {
                 result = "miss";
             }
+
+
 
             //if (map.ContainsKey(attack))
             //{
@@ -100,6 +102,18 @@ namespace Battleship
             //}
 
             return result;
+        }
+
+        private bool FleetAlive()
+        {
+            foreach (var ship in Fleet)
+            {
+                if (ship.Alive == true)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

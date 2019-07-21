@@ -12,9 +12,17 @@ namespace Battleship
         public Point Finish;
         public Dictionary<Point, bool> Spaces;
 
+        public bool Alive
+        {
+            get
+            {
+                return Spaces.ContainsValue(true);
+            }
+        }
+
         public Ship(Point Start, Point Finish)
         {
-
+            
             this.Start = Start;
             this.Finish = Finish;
             Spaces = new Dictionary<Point, bool>();
@@ -49,5 +57,7 @@ namespace Battleship
                 }
             }
         }
+
+
     }
 }
